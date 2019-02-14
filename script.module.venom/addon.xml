@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.module.venom" name="Venom Module" version="2.1" provider-name="Venom">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.beautifulsoup4" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Venom</summary>
+	    <description></description>
+		<disclaimer></disclaimer>
+		<language>en</language>
+		<platform>all</platform>
+		<license></license>
+		<forum></forum>
+		<website></website>
+		<email></email>
+		<source></source>
+		<news></news>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart></fanart>
+			<banner></banner>
+			<clearlogo></clearlogo>
+			<screenshot></screenshot>
+		</assets>
+	</extension>
+</addon>
