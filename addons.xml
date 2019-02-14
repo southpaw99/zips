@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.venom" version="2.1" name="Venom" provider-name="K-J-B">
+<addon id="plugin.video.venom" version="2.1" name="Venom" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.venom" />
@@ -8,16 +8,16 @@
 		<import addon="script.venom.metadata" />
 		<import addon="script.module.resolveurl" />
 		<import addon="script.module.requests" />
-		<import addon="script.module.metahandler" version="1.0.0" />
-		<import addon="script.module.lambdascrapers" version="1.8.5.0" />
+		<import addon="script.module.metahandler" />
+		<import addon="script.module.lambdascrapers" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="venom.py">
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.service" library="service.py" start="startup" />
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Venom</summary>
-		<description lang="en">[B]Venom[/B][CR] [B]***Lambda Sources Edition***[/B][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR]The author                                                                       does not host any of the content in this addon and takes no responsibility for content found.[CR]Modified by Ken Brown</description>
+		<summary lang="en">[B][COLOR red]Venom[/COLOR][/B] - Repo is a free portal for you to see the best stuff!</summary>
+		<description lang="en">[B]Venom[/B][CR] [B]***Lambda Sources Edition***[/B][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR]The author does not host any of the content in this addon and takes no responsibility for content found.[CR]Modified by Ken Brown</description>
 		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
 		<language>en</language>
 		<platform>all</platform>
@@ -29,15 +29,42 @@
 		<news></news>
 		<assets>
 			<icon>icon.png</icon>
-			<fanart></fanart>
-			<banner></banner>
-			<clearlogo></clearlogo>
+			<fanart>fanart.jpg</fanart>
 			<screenshot></screenshot>
 		</assets>
 	</extension>
 </addon>
 
-<addon id="script.venom.artwork" version="1.1" name="Venom Artwork" provider-name="K-J-B">
+<addon id="repository.venom" name="[B][COLOR red]Venom[/COLOR] Repo[/B]" version="1.0" provider-name="Venom">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.repository" name="Venom Repo">
+	<dir>
+		<info compressed="false">https://raw.githubusercontent.com/123VVenom/zips/master/addons.xml</info>
+		<datadir zip="true">https://raw.githubusercontent.com/123Venom/zips/master/</datadir>
+	</dir>
+	<dir>
+		<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+	</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">[B][COLOR red]Venom[/COLOR][/B] - Repo is a free portal for you to see the best stuff!</summary>
+		<description lang="en">[B][COLOR red]Venom[/COLOR][/B] - This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+		<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news></news>
+	</extension>
+</addon>
+
+<addon id="script.venom.artwork" version="1.1" name="Venom Artwork" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
@@ -57,14 +84,12 @@
 		<assets>
 			<icon>icon.png</icon>
 			<fanart></fanart>
-			<banner></banner>
-			<clearlogo></clearlogo>
 			<screenshot></screenshot>
 		</assets>
 	</extension>
 </addon>
 
-<addon id="script.venom.metadata" version="1.1" name="Venom Metadata" provider-name="K-J-B">
+<addon id="script.venom.metadata" version="1.1" name="Venom Metadata" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
@@ -84,41 +109,12 @@
 		<assets>
 			<icon>icon.png</icon>
 			<fanart></fanart>
-			<banner></banner>
-			<clearlogo></clearlogo>
 			<screenshot></screenshot>
 		</assets>
 	</extension>
 </addon>
 
-<addon id="script.module.beautifulsoup4" name="BeautifulSoup4" version="4.5.3" provider-name="Leonard Richardson (leonardr@segfault.org)">
-	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>HTML/XML parser for quick-turnaround applications like screen-scraping</summary>
-		<description>Beautiful Soup parses arbitrarily invalid SGML and provides a variety of methods and Pythonic idioms for iterating and searching the parse tree.</description>
-		<disclaimer></disclaimer>
-		<language>en</language>
-		<platform>all</platform>
-		<license>BSD</license>
-		<forum></forum>
-		<website>http://www.crummy.com/software/BeautifulSoup/</website>
-		<email></email>
-		<source></source>
-		<news></news>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart></fanart>
-			<banner></banner>
-			<clearlogo></clearlogo>
-			<screenshot></screenshot>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="script.module.venom" name="Venom Module" version="2.1" provider-name="K-J-B">
+<addon id="script.module.venom" name="Venom Module" version="2.1" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4" />
@@ -139,14 +135,34 @@
 		<assets>
 			<icon>icon.png</icon>
 			<fanart></fanart>
-			<banner></banner>
-			<clearlogo></clearlogo>
 			<screenshot></screenshot>
 		</assets>
 	</extension>
 </addon>
 
-<addon id="script.module.lambdascrapers" name="Lambdascrapers Module" version="1.8.5.0" provider-name="K-J-B">
+<addon id="script.module.metahandler" name="metahandler" version="3.0.3" provider-name="Eldorado, jsergio">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="script.module.myconnpy" version="1.1.6"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Downloads Artwork for TV shows, Movies and Music videos for addons and stores them in a local SQLITE database</summary>
+    <description lang="en">Queries, stores, and returns metadata for TV shows, Movies and Musicvideos. [CR]Sources:[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]www.imdb.com[CR]www.omdbapi.com[CR]This product uses the TMDb API but is not endorsed or certified by TMDb.</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="script.module.lambdascrapers" name="Lambdascrapers Module" version="1.8.5.0" provider-name="Venom">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0" />
 			<import addon="script.module.beautifulsoup4" />
@@ -172,8 +188,6 @@
 			<assets>
 				<icon>icon.png</icon>
 				<fanart></fanart>
-				<banner></banner>
-				<clearlogo></clearlogo>
 				<screenshot></screenshot>
 			</assets>
 		</extension>
