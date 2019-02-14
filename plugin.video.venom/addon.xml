@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.venom" version="2.1" name="Venom" provider-name="Venom">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.venom" />
+		<import addon="script.venom.artwork" />
+		<import addon="script.venom.metadata" />
+		<import addon="script.module.resolveurl" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.metahandler" />
+		<import addon="script.module.lambdascrapers" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="venom.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">[B][COLOR red]Venom[/COLOR][/B] - Repo is a free portal for you to see the best stuff!</summary>
+		<description lang="en">[B]Venom[/B][CR] [B]***Lambda Sources Edition***[/B][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR]The author does not host any of the content in this addon and takes no responsibility for content found.[CR]Modified by Ken Brown</description>
+		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+		<language>en</language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum></forum>
+		<website></website>
+		<email></email>
+		<source></source>
+		<news></news>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot></screenshot>
+		</assets>
+	</extension>
+</addon>
