@@ -1,4 +1,6 @@
 Venom Changelog:
+2.2
+-- Turn Real Debrid only back on
 2.1
 --  Reorganized settings menu
 1.0.7
