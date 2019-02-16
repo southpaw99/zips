@@ -16,43 +16,37 @@
 	</extension>
 	<extension point="xbmc.service" library="service.py" start="startup" />
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">[B][COLOR red]Venom[/COLOR][/B] - Repo is a free portal for you to see the best stuff!</summary>
-		<description lang="en">[B]Venom[/B][CR] [B]***Lambda Sources Edition***[/B][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR]The author does not host any of the content in this addon and takes no responsibility for content found.[CR]Modified by Ken Brown</description>
+		<description lang="en">[B]Venom[/B][CR] [B]***Lambda Sources Edition***[/B][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR]The author does not host any of the content in this addon and takes no responsibility for content found.[CR]Modified by Venom</description>
 		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
-		<language>en</language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-		<forum></forum>
-		<website></website>
-		<email></email>
-		<source></source>
-		<news></news>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 			<screenshot></screenshot>
 		</assets>
+		<news></news>
 	</extension>
 </addon>
 
-<addon id="repository.venom" name="[B][COLOR red]Venom[/COLOR] Repo[/B]" version="1.0" provider-name="Venom">
+<addon id="repository.venom" name="[B][COLOR red]Venom[/COLOR] Repo[/B]" version="1.2" provider-name="Venom">
 	<requires>
-		<import addon="xbmc.addon" version="12.0.0"/>
+	<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
 	<extension point="xbmc.addon.repository" name="Venom Repo">
-	<dir>
-		<info compressed="false">https://raw.githubusercontent.com/123Venom/zips/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/123Venom/zips/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/123Venom/zips/master/</datadir>
-	</dir>
-	<dir>
-		<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
-	</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/123Venom/repo/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/123Venom/repo/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/123Venom/repo/master/zips/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">[B][COLOR red]Venom[/COLOR][/B] - Repo is a free portal for you to see the best stuff!</summary>
+		<summary lang="en">Venom is a educational add-on. We do not host any of the contents streamed</summary>
 		<description lang="en">[B][COLOR red]Venom[/COLOR][/B] - This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
 		<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
 		<platform>all</platform>
@@ -62,6 +56,90 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news></news>
+	</extension>
+</addon>
+
+<addon id="script.module.lambdascrapers" name="Lambdascrapers Module" version="1.8.5" provider-name="Venom">
+		<requires>
+			<import addon="xbmc.python" version="2.1.0" />
+			<import addon="script.module.beautifulsoup4" />
+		</requires>
+		<extension point="xbmc.python.module" library="lib" />
+		<extension point="xbmc.python.pluginsource" library="lib/default.py">
+			<provides>executable</provides>
+			</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary lang="en">Lambdascrapers Module</summary>
+			<description>Scrape common video host for URL's to be playable in XBMC/Kodi, simplifying addon development of video plugins requiring multi video hosts. [CR] Modified by Venom</description>
+			<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any
+								content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational
+								purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of
+								copyright-protected works.</disclaimer>
+			<language>en</language>
+			<platform>all</platform>
+			<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+			<forum></forum>
+			<website></website>
+			<email></email>
+			<assets>
+				<icon>icon.png</icon>
+				<fanart></fanart>
+				<screenshot></screenshot>
+			</assets>
+			<news></news>
+		</extension>
+</addon>
+
+<addon id="script.module.metahandler"
+     name="metahandler"
+     version="3.0.3"
+     provider-name="Eldorado, jsergio">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="script.module.myconnpy" version="1.1.6"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Downloads Artwork for TV shows, Movies and Music videos for addons and stores them in a local SQLITE database</summary>
+    <description lang="en">Queries, stores, and returns metadata for TV shows, Movies and Musicvideos. [CR]Sources:[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]www.imdb.com[CR]www.omdbapi.com[CR]This product uses the TMDb API but is not endorsed or certified by TMDb.</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="script.module.venom" name="Venom Module" version="2.1" provider-name="Venom">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.beautifulsoup4" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Venom</summary>
+	    <description></description>
+		<disclaimer></disclaimer>
+		<language>en</language>
+		<platform>all</platform>
+		<license></license>
+		<forum></forum>
+		<website></website>
+		<email></email>
+		<source></source>
+		<news></news>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart></fanart>
+			<banner></banner>
+			<clearlogo></clearlogo>
+			<screenshot></screenshot>
+		</assets>
 	</extension>
 </addon>
 
@@ -85,6 +163,8 @@
 		<assets>
 			<icon>icon.png</icon>
 			<fanart></fanart>
+			<banner></banner>
+			<clearlogo></clearlogo>
 			<screenshot></screenshot>
 		</assets>
 	</extension>
@@ -110,87 +190,10 @@
 		<assets>
 			<icon>icon.png</icon>
 			<fanart></fanart>
+			<banner></banner>
+			<clearlogo></clearlogo>
 			<screenshot></screenshot>
 		</assets>
 	</extension>
-</addon>
-
-<addon id="script.module.venom" name="Venom Module" version="2.1" provider-name="Venom">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="script.module.beautifulsoup4" />
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Venom</summary>
-	    <description></description>
-		<disclaimer></disclaimer>
-		<language>en</language>
-		<platform>all</platform>
-		<license></license>
-		<forum></forum>
-		<website></website>
-		<email></email>
-		<source></source>
-		<news></news>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart></fanart>
-			<screenshot></screenshot>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="script.module.metahandler" name="metahandler" version="3.0.3" provider-name="Eldorado, jsergio">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.simplejson" version="3.3.0"/>
-    <import addon="script.module.addon.common" version="2.0.0"/>
-    <import addon="script.module.myconnpy" version="1.1.6"/>
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Downloads Artwork for TV shows, Movies and Music videos for addons and stores them in a local SQLITE database</summary>
-    <description lang="en">Queries, stores, and returns metadata for TV shows, Movies and Musicvideos. [CR]Sources:[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]www.imdb.com[CR]www.omdbapi.com[CR]This product uses the TMDb API but is not endorsed or certified by TMDb.</description>
-    <disclaimer lang="en"></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
-</addon>
-
-<addon id="script.module.lambdascrapers" name="Lambdascrapers Module" version="1.8.5.0" provider-name="Venom">
-		<requires>
-			<import addon="xbmc.python" version="2.1.0" />
-			<import addon="script.module.beautifulsoup4" />
-		</requires>
-		<extension point="xbmc.python.module" library="lib" />
-		<extension point="xbmc.python.pluginsource" library="lib/default.py">
-			<provides>executable</provides>
-		<extension point="xbmc.addon.metadata">
-			<summary>Lambdascrapers Module</summary>
-			<description>Scrape common video host for URL's to be playable in XBMC/Kodi, simplifying addon development of video plugins requiring multi video hosts. [CR] Modified by Ken Brown.</description>
-			<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any
-								content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational
-								purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of
-								copyright-protected works.</disclaimer>
-			<language>en</language>
-			<platform>all</platform>
-			<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-			<forum></forum>
-			<website></website>
-			<email></email>
-			<source></source>
-			<news></news>
-			<assets>
-				<icon>icon.png</icon>
-				<fanart></fanart>
-				<screenshot></screenshot>
-			</assets>
-		</extension>
 </addon>
 </addons>
