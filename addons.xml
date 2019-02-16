@@ -115,7 +115,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.venom" name="Venom Module" version="2.1" provider-name="Venom">
+<addon id="script.module.venom" name="Venom Module" version="2.2" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4" />
