@@ -1,8 +1,0 @@
-Venom Metadata
-
-1.1
--- fork
-1.0.1
--- Initial version
-1.0.2
--- Icon added
