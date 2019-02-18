@@ -7,7 +7,7 @@
 		<extension point="xbmc.python.module" library="lib" />
 		<extension point="xbmc.python.pluginsource" library="lib/default.py">
 			<provides>executable</provides>
-			</extension>
+		</extension>
 		<extension point="xbmc.addon.metadata">
 			<summary lang="en">Lambdascrapers Module</summary>
 			<description>Scrape common video host for URL's to be playable in XBMC/Kodi, simplifying addon development of video plugins requiring multi video hosts. [CR] Modified by Venom</description>
