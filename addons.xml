@@ -147,24 +147,18 @@
 	</requires>
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
-		<summary>Themes for the Venom Addon</summary>
+		<summary>Themes for the [B]Venom[/B] Addon</summary>
 		<description></description>
 		<disclaimer></disclaimer>
 		<language>en</language>
 		<platform>all</platform>
-		<license></license>
-		<forum></forum>
-		<website></website>
-		<email></email>
-		<source></source>
-		<news></news>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart></fanart>
-			<banner></banner>
-			<clearlogo></clearlogo>
 			<screenshot></screenshot>
 		</assets>
+		<news></news>
 	</extension>
 </addon>
 
