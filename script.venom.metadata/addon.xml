@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.venom.metadata" version="1.1" name="Venom Metadata" provider-name="Venom">
+<addon id="script.venom.metadata" version="1.1.1" name="[B][COLOR red]Venom[/COLOR] Metadata[/B]" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
-		<summary>Metadata for the Venom Addon</summary>
-		<description>Metadata for Venom are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<summary>Metadata for the [B][COLOR red]Venom[/COLOR][/B] Addon</summary>
+		<description>Metadata for [B][COLOR red]Venom[/COLOR][/B] are maintained separately to make distribution of the the addon itself easier/faster.</description>
 		<disclaimer></disclaimer>
 		<language>en</language>
 		<platform>all</platform>
@@ -15,7 +15,6 @@
 		<website></website>
 		<email></email>
 		<source></source>
-		<news></news>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart></fanart>
@@ -23,5 +22,6 @@
 			<clearlogo></clearlogo>
 			<screenshot></screenshot>
 		</assets>
+		<news></news>
 	</extension>
 </addon>
