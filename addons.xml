@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.venom" version="2.3" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
+<addon id="plugin.video.venom" version="2.3.1" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.venom" />
@@ -16,6 +16,7 @@
 	</extension>
 	<extension point="xbmc.service" library="service.py" start="startup" />
 	<extension point="xbmc.addon.metadata">
+		<summary lang="en">[B][COLOR red]Venom[/COLOR][/B] is a educational add-on. We do not host any of the contents streamed</summary>
 		<description lang="en">[B]Venom[/B][CR] [B]***Lambda Sources Edition***[/B][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR]The author does not host any of the content in this addon and takes no responsibility for content found.[CR]Modified by Venom</description>
 		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
 		<platform>all</platform>
@@ -46,7 +47,7 @@
 		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Venom is a educational add-on. We do not host any of the contents streamed</summary>
+		<summary lang="en">[B][COLOR red]Venom[/COLOR][/B] is a educational add-on. We do not host any of the contents streamed</summary>
 		<description lang="en">[B][COLOR red]Venom[/COLOR][/B] - This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
 		<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
 		<platform>all</platform>
@@ -115,7 +116,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.venom" name="[B][COLOR red]Venom[/COLOR] Script Module[/B]" version="2.4" provider-name="Venom">
+<addon id="script.module.venom" name="[B][COLOR red]Venom[/COLOR] Script Module[/B]" version="2.4.1" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4" />
@@ -141,13 +142,13 @@
 	</extension>
 </addon>
 
-<addon id="script.venom.artwork" version="1.3" name="[B][COLOR red]Venom[/COLOR] Artwork[/B]" provider-name="Venom">
+<addon id="script.venom.artwork" version="1.3.1" name="[B][COLOR red]Venom[/COLOR] Artwork[/B]" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
-		<summary>Themes for the [B]Venom[/B] Addon</summary>
+		<summary>Icon-Artwork pack for the [B]Venom[/B] Addon</summary>
 		<description></description>
 		<disclaimer></disclaimer>
 		<language>en</language>
@@ -162,14 +163,14 @@
 	</extension>
 </addon>
 
-<addon id="script.venom.metadata" version="1.1" name="[B][COLOR red]Venom[/COLOR] Metadata[/B]" provider-name="Venom">
+<addon id="script.venom.metadata" version="1.1.1" name="[B][COLOR red]Venom[/COLOR] Metadata[/B]" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
-		<summary>Metadata for the Venom Addon</summary>
-		<description>Metadata for Venom are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<summary>Metadata for the [B][COLOR red]Venom[/COLOR][/B] Addon</summary>
+		<description>Metadata for [B][COLOR red]Venom[/COLOR][/B] are maintained separately to make distribution of the the addon itself easier/faster.</description>
 		<disclaimer></disclaimer>
 		<language>en</language>
 		<platform>all</platform>
@@ -178,7 +179,6 @@
 		<website></website>
 		<email></email>
 		<source></source>
-		<news></news>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart></fanart>
@@ -186,6 +186,7 @@
 			<clearlogo></clearlogo>
 			<screenshot></screenshot>
 		</assets>
+		<news></news>
 	</extension>
 </addon>
 </addons>
