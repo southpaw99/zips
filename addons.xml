@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.venom" version="2.3.2" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
+<addon id="plugin.video.venom" version="2.3.3" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.venom" />
@@ -32,7 +32,7 @@
 	</extension>
 </addon>
 
-<addon id="repository.venom" name="[B][COLOR red]Venom[/COLOR] Repo[/B]" version="1.1" provider-name="Venom">
+<addon id="repository.venom" name="[B][COLOR red]Venom[/COLOR] Repo[/B]" version="1.2" provider-name="Venom">
 	<requires>
 	<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
@@ -46,6 +46,11 @@
 			<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/nixgates/nixgates/master/packages/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/nixgates/nixgates/master/packages/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/nixgates/nixgates/master/packages</datadir>
 		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -62,7 +67,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.lambdascrapers" name="Lambdascrapers Module" version="1.8.6" provider-name="Venom">
+<addon id="script.module.lambdascrapers" name="Lambdascrapers Module" version="1.8.7" provider-name="Venom">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0" />
 			<import addon="script.module.beautifulsoup4" />
@@ -87,7 +92,7 @@
 			<assets>
 				<icon>icon.png</icon>
 				<fanart></fanart>
-				<screenshot></screenshot>
+				<screenshot>resources/screenshots/1.png</screenshot>
 			</assets>
 			<news></news>
 		</extension>
@@ -118,7 +123,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.venom" name="[B][COLOR red]Venom[/COLOR] Script Module[/B]" version="2.4.2" provider-name="Venom">
+<addon id="script.module.venom" name="[B][COLOR red]Venom[/COLOR] Script Module[/B]" version="2.4.3" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4" />
