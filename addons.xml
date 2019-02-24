@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.venom" version="2.3.1" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
+<addon id="plugin.video.venom" version="2.3.2" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.venom" />
@@ -24,7 +24,9 @@
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
-			<screenshot></screenshot>
+			<screenshot>resources/screenshots/1.png</screenshot>
+			<screenshot>resources/screenshots/2.png</screenshot>
+			<screenshot>resources/screenshots/3.png</screenshot>
 		</assets>
 		<news></news>
 	</extension>
@@ -116,7 +118,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.venom" name="[B][COLOR red]Venom[/COLOR] Script Module[/B]" version="2.4.1" provider-name="Venom">
+<addon id="script.module.venom" name="[B][COLOR red]Venom[/COLOR] Script Module[/B]" version="2.4.2" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4" />
