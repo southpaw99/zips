@@ -1,4 +1,8 @@
 Venom Changelog:
+2.3.6
+-- Setting page fixes for Leia changes
+-- Takt fixes
+-- Resume playback fix
 
 2.1
 --  Reorganized settings menu
