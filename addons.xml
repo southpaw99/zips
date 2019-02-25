@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.venom" version="2.3.3" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
+<addon id="plugin.video.venom" version="2.3.4" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.venom" />
@@ -133,7 +133,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.venom" name="[B][COLOR red]Venom[/COLOR] Script Module[/B]" version="2.4.3" provider-name="Venom">
+<addon id="script.module.venom" name="[B][COLOR red]Venom[/COLOR] Script Module[/B]" version="2.4.4" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4" />
