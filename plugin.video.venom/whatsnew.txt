@@ -16,6 +16,26 @@ Please find Lambda scrapers on github and help contribute!
 
 
 =======[B]CHANGE LOG[/B]=======
+
+[B] Feb 25, 2019[/B]
+[B]plugin.video.venom - 2.3.8[/B]
+
+[B]Updates:[/B]------------------------
+[B] Feb 25, 2019[/B]
+[B]plugin.video.venom - 2.3.7[/B]
+
+[B]Updates:[/B]------------------------
+[B] Feb 23, 2019[/B]
+[B]plugin.video.venom - 2.3.6[/B]
+
+[B]Updates:[/B]------------------------
+[B] Feb 21, 2019[/B]
+[B]plugin.video.venom - 2.3[/B]
+
+[B]Updates:[/B]------------------------
+[B] Feb 20, 2019[/B]
+[B]plugin.video.venom - 2.2[/B]
+
 [B]2.1[/B]
 - misc fixes
 [B]2.0[/B]

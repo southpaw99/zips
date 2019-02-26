@@ -1,8 +1,22 @@
 Venom Changelog:
+
+2.3.8
+-- Account settings fixes
+
+2.3.7
+-- Added hidden Trakt username to settings
+   for visual confirmation of Authentication
+
 2.3.6
 -- Setting page fixes for Leia changes
 -- Takt fixes
--- Resume playback fix
+-- Resume playback fix (Eggman)
+
+2.3
+-- updated lang ID's
+
+2.2
+-- 
 
 2.1
 --  Reorganized settings menu
