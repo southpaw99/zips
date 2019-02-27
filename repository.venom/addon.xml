@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="repository.venom" name="[B][COLOR red]Venom[/COLOR] Repo[/B]" version="1.3" provider-name="Venom">
+<addon id="repository.venom" name="[B][COLOR red]Venom[/COLOR] Repo[/B]" version="1.4" provider-name="Venom">
 	<requires>
 	<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>	
