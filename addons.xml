@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.venom" version="2.4.1" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
+<addon id="plugin.video.venom" version="2.4.2" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.venom" />
@@ -128,7 +128,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.lambdascrapers" name="Lambdascrapers Module" version="1.8.9" provider-name="Venom">
+<addon id="script.module.lambdascrapers" name="Lambdascrapers Module" version="1.9.0" provider-name="Venom">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0" />
 			<import addon="script.module.beautifulsoup4" />
@@ -205,7 +205,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.venom" name="[B][COLOR red]Venom[/COLOR] Script Module[/B]" version="2.4.9" provider-name="Venom">
+<addon id="script.module.venom" name="[B][COLOR red]Venom[/COLOR] Script Module[/B]" version="2.5.1" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4" />
