@@ -1,0 +1,64 @@
+Venom Module Changelog
+------------------------------------
+2.5.1
+-- Fixed Certificates section for IMDB change 
+
+2.4.9
+-- Search history database change 
+
+2.4.8
+-- Trak.py change 
+
+2.4.7
+-- Trakt.py changes to address settings page bugs in Leia
+
+2.4.6
+-- Modules update
+
+2.4.5
+-- Setting page changes
+
+2.4
+-- Moved Lamda Setting to Tools menu
+-- "In Theaters" now only list true movies as "now playing" imbd search string
+-- Added Oscar Nominees catagory
+-- few Genre fixes
+
+2.3
+-- updated modules
+
+2.2
+-- 
+
+2.1
+-- Changed Theater imdb scraper
+
+1.0.9
+-- New Trakt.tv API key
+
+1.0.8
+-- Resume fix for Kodi 18
+-- Removed Channels
+
+1.0.7
+-- Fix "In Theaters"
+
+1.0.6
+-- Cleanup module selection
+-- Fix "In Theaters"
+-- Fix Extended Info on TV Shows
+
+1.0.5
+-- 
+
+1.0.4
+-- 
+
+1.0.3
+-- 
+
+1.0.2
+-- 
+
+1.0.1
+-- Initial commit
