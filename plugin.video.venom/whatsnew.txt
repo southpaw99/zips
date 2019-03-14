@@ -1,0 +1,73 @@
+﻿======[B][COLOR green]Status: SUPPORTED[/COLOR][/B]========
+
+
+
+[B][COLOR red]Venom[/COLOR][/B] with Lamda Scrapers.
+
+Please find Lambda scrapers on github and help contribute!
+
+
+
+=======[B]SUPPORT[/B]========
+
+
+
+
+
+
+=======[B]CHANGE LOG[/B]=======
+
+[B] March 04, 2019[/B]
+[B]plugin.video.venom - 2.4.3[/B]
+
+[B] March 04, 2019[/B]
+[B]plugin.video.venom - 2.4.2[/B]
+
+[B] March 01, 2019[/B]
+[B]plugin.video.venom - 2.4.0[/B]
+
+[B] Feb 27, 2019[/B]
+[B]plugin.video.venom - 2.3.9[/B]
+
+[B] Feb 26, 2019[/B]
+[B]plugin.video.venom - 2.3.8[/B]
+
+[B]Updates:[/B]------------------------
+[B] Feb 25, 2019[/B]
+[B]plugin.video.venom - 2.3.7[/B]
+
+[B]Updates:[/B]------------------------
+[B] Feb 23, 2019[/B]
+[B]plugin.video.venom - 2.3.6[/B]
+
+[B]Updates:[/B]------------------------
+[B] Feb 21, 2019[/B]
+[B]plugin.video.venom - 2.3[/B]
+
+[B]Updates:[/B]------------------------
+[B] Feb 20, 2019[/B]
+[B]plugin.video.venom - 2.2[/B]
+
+[B]2.1[/B]
+- misc fixes
+[B]2.0[/B]
+- Kodi 18 fixes
+- a mess of code fixes
+- auto resume should be fixed, please let me know
+- added 50,60,70,80,90,Y2K Movies/Shows
+- changed defaults for users not wanting to look!!
+- fixed apis
+- repo fixed
+- didnt finish 24/7, coming soon.
+
+
+
+=======[B]CREDITS[/B]========
+
+Serpent Drago for support, help and sharing. Big RESPECT to YOU!!!
+
+
+
+
+
+

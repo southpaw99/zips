@@ -1,0 +1,64 @@
+Venom Changelog:
+
+2.4.4
+-- Added color option for unaired episodes
+-- Removed Alluc account settings
+-- Removed Segos account settings
+-- Added Gostream account settings
+
+2.4.3
+-- Few fixes to Collections movie section
+
+2.4.2
+-- Fixed Certificates section for IMDB change
+
+2.4.0
+-- One more settings page change to address Leia bugs
+
+
+2.3.9
+-- Restructured settings page to address Leia bugs
+
+2.3.8
+-- Account settings fixes
+
+2.3.7
+-- Added hidden Trakt username to settings
+   for visual confirmation of Authentication
+
+2.3.6
+-- Setting page fixes for Leia changes
+-- Takt fixes
+-- Resume playback fix (Eggman)
+
+2.3
+-- updated lang ID's
+
+2.2
+-- 
+
+2.1
+--  Reorganized settings menu
+
+1.0.7
+-- Trakt auth through settings fix for Leia and other minor settings adjustments
+-- "Info!!" Popup notification on first run or version change
+
+1.0.6
+-- Lambda Scrapers set as default provider
+
+1.0.5
+-- Added German and Polish language support
+
+1.0.4
+-- 
+
+1.0.3
+-- 
+
+1.0.2
+-- 
+
+1.0.1
+-- Initial commit
+
