@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.venom" version="2.4.4" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
+<addon id="plugin.video.venom" version="2.4.5" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
+
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="script.module.venom" />
-		<import addon="script.venom.artwork" />
-		<import addon="script.venom.metadata" />
+<!--		<import addon="script.module.venom" /> -->
+<!--		<import addon="script.venom.artwork" /> -->
+<!--		<import addon="script.venom.metadata" /> -->
+		<import addon="script.module.beautifulsoup4" />
 		<import addon="script.module.resolveurl" />
 		<import addon="script.module.requests" />
 		<import addon="script.module.metahandler" />
 		<import addon="script.module.lambdascrapers" />
 	</requires>
+
 	<extension point="xbmc.python.pluginsource" library="venom.py">
 		<provides>video</provides>
 	</extension>
+
 	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.python.module" library="resources/lib/"/>
+
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">[B][COLOR red]Venom[/COLOR][/B] is a educational add-on. We do not host any of the contents streamed</summary>
 		<description lang="en">[B]Venom[/B][CR] [B]***Lambda Sources Edition***[/B][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR]The author does not host any of the content in this addon and takes no responsibility for content found.[CR]Modified by Venom</description>
@@ -28,8 +34,56 @@
 			<screenshot>resources/screenshots/2.png</screenshot>
 			<screenshot>resources/screenshots/3.png</screenshot>
 		</assets>
-		<news></news>
+		<news>
+[B]Update - v2.4.5 - March 15th, 2019[/B]
+[I]-- Conlidation of Addons![/I]
+[I]-- Moved script.module.venom to plugin[/I]
+[I]-- Moved script.venom.artwork to plugin[/I]
+[I]-- Deleted script.venom.metada, purely uses just the meta.db cache file in userdata now[/I]
+[I]-- The above 3 scripts will now be listed under dependencies as "orphaned" so uninstall them![/I]
+
+[B]Update - v2.4.4 - March 13th, 2019[/B]
+[I]-- Added color option for unaired episodes[/I]
+[I]-- Removed Alluc account[/I]
+[I]-- Removed Segos account[/I]
+[I]-- Added Gostream account settings[/I]
+
+[B]Update - v2.4.3 - March 7th, 2019[/B]
+[I]-- Few fixes to Collections movie section[/I]
+
+[B]Update - 2.4.2 - March 4th, 2019[/B]
+[I]-- Fixed Certificates section for IMDB adress change[/I]
+
+2[B]Update - 2.4.0 - March 1st, 2019[/B]
+[I]-- One more settings page change to address Leia bugs[/I]
+
+2[B]Update - 2.3.9 - Feb. 27th, 2019[/B]
+[I]-- Restructured settings page to address Leia bugs[/I]
+
+[B]Update - 2.3.8 - Feb. 26th, 2019[/B]
+[I]-- Account settings fixes[/I]
+
+[B]Update - 2.3.7 - Feb. 25th, 2019[/B]
+[I]-- Added hidden Trakt username to settings[/I]
+[I]-- for visual confirmation of Authentication[/I]
+
+[B]Update - 2.3.6 - Feb. 23rd, 2019[/B]
+[I]-- Setting page fixes for Leia changes[/I]
+[I]-- Takt fixes - [/I]
+[I]-- Resume playback fix (Eggman)[/I]
+
+
+[B]Update - 2.3.5 - Feb. 21st, 2019[/B]
+[I]-- updated lang ID's[/I]
+
+[B]Update - 2.2 - Feb. 20th, 2019[/B]
+[I]-- Play trailer fix under Leia-Eggman![/I]
+
+[B]Update - 2.1 - Feb. 19th, 2019[/B]
+[I]--  Reorganized settings menu[/I]
+		</news>
 	</extension>
+
 </addon>
 
 <addon id="repository.aeon.nox.silvo" name="Aeon Nox: SiLVO Repository" version="1.0.5" provider-name="SiLVO">
@@ -202,80 +256,6 @@
 		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
 		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
 		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
-	</extension>
-</addon>
-
-<addon id="script.module.venom" name="[B][COLOR red]Venom[/COLOR] Script Module[/B]" version="2.5.6" provider-name="Venom">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="script.module.beautifulsoup4" />
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>[B][COLOR red]Venom[/COLOR] Script.Module[/B]</summary>
-	    <description lang="en">This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
-		<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon. The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation. This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works</disclaimer>
-		<language>en</language>
-		<platform>all</platform>
-		<license></license>
-		<forum></forum>
-		<website></website>
-		<email></email>
-		<source></source>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart></fanart>
-			<screenshot></screenshot>
-		</assets>
-		<news></news>
-	</extension>
-</addon>
-
-<addon id="script.venom.artwork" version="1.3.3" name="[B][COLOR red]Venom[/COLOR] Artwork[/B]" provider-name="Venom">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Icon-Artwork pack for the [B]Venom[/B] Addon</summary>
-		<description></description>
-		<disclaimer></disclaimer>
-		<language>en</language>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart></fanart>
-			<screenshot></screenshot>
-		</assets>
-		<news></news>
-	</extension>
-</addon>
-
-<addon id="script.venom.metadata" version="1.1.1" name="[B][COLOR red]Venom[/COLOR] Metadata[/B]" provider-name="Venom">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Metadata for the [B][COLOR red]Venom[/COLOR][/B] Addon</summary>
-		<description>Metadata for [B][COLOR red]Venom[/COLOR][/B] are maintained separately to make distribution of the the addon itself easier/faster.</description>
-		<disclaimer></disclaimer>
-		<language>en</language>
-		<platform>all</platform>
-		<license></license>
-		<forum></forum>
-		<website></website>
-		<email></email>
-		<source></source>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart></fanart>
-			<banner></banner>
-			<clearlogo></clearlogo>
-			<screenshot></screenshot>
-		</assets>
-		<news></news>
 	</extension>
 </addon>
 </addons>
