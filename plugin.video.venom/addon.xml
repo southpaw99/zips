@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.venom" version="2.4.7" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
+<addon id="plugin.video.venom" version="2.4.8" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
 
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -34,6 +34,10 @@
 			<screenshot>resources/screenshots/3.png</screenshot>
 		</assets>
 		<news>
+[B]Update - v2.4.8 - March 18th, 2019[/B]
+[I]-- Fixed Hide in Cinema option and added new slider to set how many months back you wish to go.
+  6 works perfect imo and removes movies playing in theaters[/I]
+
 [B]Update - v2.4.7 - March 18th, 2019[/B]
 [I]-- Fixed up "My List" Section.  Few broken links fixed.  Also grouped the list to keep Trakt and IMdb together[/I]
 
