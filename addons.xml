@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.venom" version="2.4.9" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
+<addon id="plugin.video.venom" version="2.5.0" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
 
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -35,17 +35,20 @@
 			<screenshot>resources/screenshots/3.png</screenshot>
 		</assets>
 		<news>
+[B]Update - v2.5.0 - March 20th, 2019[/B]
+[I]-- Fixed My Lists, New Movie and Episodes infrequent response to being turned on and off[/I]
+
 [B]Update - v2.4.9 - March 20th, 2019[/B]
 [I]-- Fixed broken def that effected most of the Trakt links in My Lists[/I]
 
-[B]Update - v2.4.8 - March 19th, 2019[/B]
+[B]Update - v2.4.8 - March 18th, 2019[/B]
 [I]-- Fixed Hide in Cinema option and added new slider to set how many months back you wish to go.
   6 works perfect imo and removes movies playing in theaters[/I]
 
-[B]Update - v2.4.7 - March 17th, 2019[/B]
+[B]Update - v2.4.7 - March 18th, 2019[/B]
 [I]-- Fixed up "My List" Section.  Few broken links fixed.  Also grouped the list to keep Trakt and IMdb together[/I]
 
-[B]Update - v2.4.6 - March 16th, 2019[/B]
+[B]Update - v2.4.6 - March 15th, 2019[/B]
 [I]-- Added Christmas collection with option to enable/disable in settings[/I]
 
 [B]Update - v2.4.5 - March 15th, 2019[/B]
