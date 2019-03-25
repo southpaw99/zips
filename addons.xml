@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.venom" version="2.5.0" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
+<addon id="plugin.video.venom" version="2.6.0" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
 
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -30,11 +30,18 @@
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
-			<screenshot>resources/screenshots/1.png</screenshot>
-			<screenshot>resources/screenshots/2.png</screenshot>
-			<screenshot>resources/screenshots/3.png</screenshot>
+			<screenshot>resources/screenshots/screenshot01a.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot02a.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot03a.jpg</screenshot>
 		</assets>
 		<news>
+[B]Update - v2.6.0 - March 20th, 2019[/B]
+[I]-- Updated modules[/I]
+[I]-- fix "My List" Broke Progress and Episodes list in last update[/I]
+[I]-- Solved query broken under Leia.  Can now jump to specific sections in other settings again[/I]
+[I]-- added new setting to fix the "Unknown video info key" log errors for Leia[/I]
+[I]-- partially solved missing artwork in Trakt OnDeck and Hisotry, soon will be fixed[/I]
+
 [B]Update - v2.5.0 - March 20th, 2019[/B]
 [I]-- Fixed My Lists, New Movie and Episodes infrequent response to being turned on and off[/I]
 
@@ -198,7 +205,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.lambdascrapers" name="Lambdascrapers Module" version="2.0.1" provider-name="Venom">
+<addon id="script.module.lambdascrapers" name="Lambdascrapers Module" version="2.0.2" provider-name="Venom">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0" />
 			<import addon="script.module.beautifulsoup4" />
@@ -255,7 +262,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.27" provider-name="jsergio">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.27a" provider-name="jsergio">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />

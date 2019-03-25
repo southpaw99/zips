@@ -1,3 +1,13 @@
+﻿[B]Update - v2.6.0 - March 20th, 2019[/B]
+[I]-- Updated modules[/I]
+[I]-- fix "My List" Broke Progress and Episodes list in last update[/I]
+[I]-- Solved query broken under Leia.  Can now jump to specific sections in other settings again[/I]
+[I]-- added new setting to fix the "Unknown video info key" log errors for Leia[/I]
+[I]-- partially solved missing artwork in Trakt OnDeck and Hisotry, soon will be fixed[/I]
+
+[B]Update - v2.5.0 - March 20th, 2019[/B]
+[I]-- Fixed My Lists, New Movie and Episodes infrequent response to being turned on and off[/I]
+
 [B]Update - v2.4.9 - March 20th, 2019[/B]
 [I]-- Fixed broken def that effected most of the Trakt links in My Lists[/I]
 
@@ -5,7 +15,7 @@
 [I]-- Fixed Hide in Cinema option and added new slider to set how many months back you wish to go.
   6 works perfect imo and removes movies playing in theaters[/I]
 
-B]Update - v2.4.7 - March 17th, 2019[/B]
+[B]Update - v2.4.7 - March 17th, 2019[/B]
 [I]-- Fixed up "My List" Section.  Few broken links fixed.  Also grouped the list to keep Trakt and IMdb together[/I]
 
 [B]Update - v2.4.6 - March 16th, 2019[/B]
@@ -64,3 +74,4 @@ B]Update - v2.4.7 - March 17th, 2019[/B]
 
 
 
+

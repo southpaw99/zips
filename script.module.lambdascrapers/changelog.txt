@@ -1,5 +1,11 @@
 Lambdascrapers Module Changelog:
 -------------------------------------------------
+2.0.2
+-- Torrentapi is back
+-- few hoster fixes
+
+2.0.1
+-- Scraper update
 
 1.9.1
 -- scraper Torrent magnetdl (Eggman)
