@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.venom" version="2.6.0" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
+<addon id="plugin.video.venom" version="2.6.1" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
 
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -34,6 +34,11 @@
 			<screenshot>resources/screenshots/screenshot03a.jpg</screenshot>
 		</assets>
 		<news>
+[B]Update - v2.6.1 - March 20th, 2019[/B]
+[I]-- Fixed remaining missing artwork in Trakt History and OnDeck[/I]
+[I]-- removed interface option for "Unknown video info key", not needed[/I]
+[I]-- swap out old Fanart.tv dev API key for good working one, does not impact Persoanl API key[/I]
+
 [B]Update - v2.6.0 - March 20th, 2019[/B]
 [I]-- Updated modules[/I]
 [I]-- fix "My List" Broke Progress and Episodes list in last update[/I]
