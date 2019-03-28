@@ -1,11 +1,19 @@
-﻿[B]Update - v2.6.0 - March 20th, 2019[/B]
+﻿[B]Update - v2.6.2 - March 28th, 2019[/B]
+[I]-- Lambda Scraper module is now a thing of the past.  All scrapers are now in addon settings[/I]
+
+[B]Update - v2.6.1 - March 27th, 2019[/B]
+[I]-- Fixed remaining missing artwork in Trakt History and OnDeck[/I]
+[I]-- removed interface option for "Unknown video info key", not needed[/I]
+[I]-- swap out old Fanart.tv dev API key for good working one, does not impact Persoanl API key[/I]
+
+[B]Update - v2.6.0 - March 25th, 2019[/B]
 [I]-- Updated modules[/I]
 [I]-- fix "My List" Broke Progress and Episodes list in last update[/I]
 [I]-- Solved query broken under Leia.  Can now jump to specific sections in other settings again[/I]
 [I]-- added new setting to fix the "Unknown video info key" log errors for Leia[/I]
 [I]-- partially solved missing artwork in Trakt OnDeck and Hisotry, soon will be fixed[/I]
 
-[B]Update - v2.5.0 - March 20th, 2019[/B]
+[B]Update - v2.5.0 - March 22th, 2019[/B]
 [I]-- Fixed My Lists, New Movie and Episodes infrequent response to being turned on and off[/I]
 
 [B]Update - v2.4.9 - March 20th, 2019[/B]
@@ -74,4 +82,10 @@
 
 
 
-
+
+
+
+
+
+
+

@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.venom" version="2.6.1" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
+<addon id="plugin.video.venom" version="2.6.2" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
 
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
-<!--		<import addon="script.module.venom" /> -->
-<!--		<import addon="script.venom.artwork" /> -->
-<!--		<import addon="script.venom.metadata" /> -->
 		<import addon="script.module.beautifulsoup4" />
 		<import addon="script.module.resolveurl" />
 		<import addon="script.module.requests" />
 		<import addon="script.module.metahandler" />
-		<import addon="script.module.lambdascrapers" />
 	</requires>
 
 	<extension point="xbmc.python.pluginsource" library="venom.py">
@@ -34,6 +30,9 @@
 			<screenshot>resources/screenshots/screenshot03a.jpg</screenshot>
 		</assets>
 		<news>
+[B]Update - v2.6.2 - March 20th, 2019[/B]
+[I]-- Lambda Scraper module is now a thing of the past.  All scrapers are now in addon settings[/I]
+
 [B]Update - v2.6.1 - March 20th, 2019[/B]
 [I]-- Fixed remaining missing artwork in Trakt History and OnDeck[/I]
 [I]-- removed interface option for "Unknown video info key", not needed[/I]
