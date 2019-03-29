@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.venom" version="2.6.2" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
+<addon id="plugin.video.venom" version="2.6.3" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
 
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -30,82 +30,87 @@
 			<screenshot>resources/screenshots/screenshot03a.jpg</screenshot>
 		</assets>
 		<news>
-[B]Update - v2.6.2 - March 20th, 2019[/B]
+
+[B]Update - v2.6.3 - March 29, 2019[/B]
+[I]-- Fixed a few scraper defaults[/I]
+[I]-- Renamed SD setting under filter option for clearer understnading of it's purpose [/I]
+
+[B]Update - v2.6.2 - March 29, 2019[/B]
 [I]-- Lambda Scraper module is now a thing of the past.  All scrapers are now in addon settings[/I]
 
-[B]Update - v2.6.1 - March 20th, 2019[/B]
+[B]Update - v2.6.1 - March 27, 2019[/B]
 [I]-- Fixed remaining missing artwork in Trakt History and OnDeck[/I]
 [I]-- removed interface option for "Unknown video info key", not needed[/I]
 [I]-- swap out old Fanart.tv dev API key for good working one, does not impact Persoanl API key[/I]
 
-[B]Update - v2.6.0 - March 20th, 2019[/B]
+[B]Update - v2.6.0 - March 25, 2019[/B]
 [I]-- Updated modules[/I]
 [I]-- fix "My List" Broke Progress and Episodes list in last update[/I]
 [I]-- Solved query broken under Leia.  Can now jump to specific sections in other settings again[/I]
 [I]-- added new setting to fix the "Unknown video info key" log errors for Leia[/I]
 [I]-- partially solved missing artwork in Trakt OnDeck and Hisotry, soon will be fixed[/I]
 
-[B]Update - v2.5.0 - March 20th, 2019[/B]
+[B]Update - v2.5.0 - March 22, 2019[/B]
 [I]-- Fixed My Lists, New Movie and Episodes infrequent response to being turned on and off[/I]
 
-[B]Update - v2.4.9 - March 20th, 2019[/B]
+[B]Update - v2.4.9 - March 20, 2019[/B]
 [I]-- Fixed broken def that effected most of the Trakt links in My Lists[/I]
 
-[B]Update - v2.4.8 - March 18th, 2019[/B]
+[B]Update - v2.4.8 - March 19, 2019[/B]
 [I]-- Fixed Hide in Cinema option and added new slider to set how many months back you wish to go.
   6 works perfect imo and removes movies playing in theaters[/I]
 
-[B]Update - v2.4.7 - March 18th, 2019[/B]
+[B]Update - v2.4.7 - March 17, 2019[/B]
 [I]-- Fixed up "My List" Section.  Few broken links fixed.  Also grouped the list to keep Trakt and IMdb together[/I]
 
-[B]Update - v2.4.6 - March 15th, 2019[/B]
+[B]Update - v2.4.6 - March 16, 2019[/B]
 [I]-- Added Christmas collection with option to enable/disable in settings[/I]
 
-[B]Update - v2.4.5 - March 15th, 2019[/B]
+[B]Update - v2.4.5 - March 15 2019[/B]
 [I]-- Conlidation of Addons![/I]
 [I]-- Moved script.module.venom to plugin[/I]
 [I]-- Moved script.venom.artwork to plugin[/I]
 [I]-- Deleted script.venom.metada, purely uses just the meta.db cache file in userdata now[/I]
 [I]-- The above 3 scripts will now be listed under dependencies as "orphaned" so uninstall them![/I]
 
-[B]Update - v2.4.4 - March 13th, 2019[/B]
+[B]Update - v2.4.4 - March 13, 2019[/B]
 [I]-- Added color option for unaired episodes[/I]
 [I]-- Removed Alluc account[/I]
 [I]-- Removed Segos account[/I]
 [I]-- Added Gostream account settings[/I]
 
-[B]Update - v2.4.3 - March 7th, 2019[/B]
+[B]Update - v2.4.3 - March 7, 2019[/B]
 [I]-- Few fixes to Collections movie section[/I]
 
-[B]Update - 2.4.2 - March 4th, 2019[/B]
+[B]Update - 2.4.2 - March 4, 2019[/B]
 [I]-- Fixed Certificates section for IMDB adress change[/I]
 
-2[B]Update - 2.4.0 - March 1st, 2019[/B]
+2[B]Update - 2.4.0 - March 1, 2019[/B]
 [I]-- One more settings page change to address Leia bugs[/I]
 
-2[B]Update - 2.3.9 - Feb. 27th, 2019[/B]
+2[B]Update - 2.3.9 - Feb. 27, 2019[/B]
 [I]-- Restructured settings page to address Leia bugs[/I]
 
-[B]Update - 2.3.8 - Feb. 26th, 2019[/B]
+[B]Update - 2.3.8 - Feb. 26, 2019[/B]
 [I]-- Account settings fixes[/I]
 
-[B]Update - 2.3.7 - Feb. 25th, 2019[/B]
+[B]Update - 2.3.7 - Feb. 25, 2019[/B]
 [I]-- Added hidden Trakt username to settings[/I]
 [I]-- for visual confirmation of Authentication[/I]
 
-[B]Update - 2.3.6 - Feb. 23rd, 2019[/B]
+[B]Update - 2.3.6 - Feb. 23, 2019[/B]
 [I]-- Setting page fixes for Leia changes[/I]
 [I]-- Takt fixes - [/I]
 [I]-- Resume playback fix (Eggman)[/I]
 
 
-[B]Update - 2.3.5 - Feb. 21st, 2019[/B]
+[B]Update - 2.3.5 - Feb. 21, 2019[/B]
 [I]-- updated lang ID's[/I]
 
-[B]Update - 2.2 - Feb. 20th, 2019[/B]
+[B]Update - 2.2 - Feb. 20, 2019[/B]
 [I]-- Play trailer fix under Leia-Eggman![/I]
 
-[B]Update - 2.1 - Feb. 19th, 2019[/B]
+[B]Update - 2.1 - Feb. 19, 2019[/B]
 [I]--  Reorganized settings menu[/I]
 		</news>
 	</extension>
