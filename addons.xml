@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.venom" version="2.6.3" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
+<addon id="plugin.video.venom" version="2.6.4" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
 
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -18,8 +18,8 @@
 	<extension point="xbmc.python.module" library="resources/lib/"/>
 
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">[B][COLOR red]Venom[/COLOR][/B] is a educational add-on. We do not host any of the contents streamed</summary>
-		<description lang="en">[B]Venom[/B][CR] [B]***Lambda Sources Edition***[/B][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR]The author does not host any of the content in this addon and takes no responsibility for content found.[CR]Modified by Venom</description>
+		<summary lang="en">[B][COLOR red]Venom[/COLOR][/B] We do not host any of the contents streamed</summary>
+		<description lang="en">[B]Venom[/B][CR] This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR]The author does not host any of the content in this addon and takes no responsibility for content found.[CR]Modified by Venom</description>
 		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
@@ -32,11 +32,16 @@
 		</assets>
 		<news>
 
+[B]Update - v2.6.4 - March 30, 2019[/B]
+[I]-- Missed removed an old Lamda setting in 2.6.3[/I]
+[I]-- rigorously tested and removed non working Hosters, added a few new ones[/I]
+
+
 [B]Update - v2.6.3 - March 29, 2019[/B]
 [I]-- Fixed a few scraper defaults[/I]
 [I]-- Renamed SD setting under filter option for clearer understnading of it's purpose [/I]
 
-[B]Update - v2.6.2 - March 29, 2019[/B]
+[B]Update - v2.6.2 - March 28, 2019[/B]
 [I]-- Lambda Scraper module is now a thing of the past.  All scrapers are now in addon settings[/I]
 
 [B]Update - v2.6.1 - March 27, 2019[/B]
