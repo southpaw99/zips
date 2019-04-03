@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.venom" version="2.6.4" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
+<addon id="plugin.video.venom" version="2.6.5" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
 
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -30,6 +30,10 @@
 			<screenshot>resources/screenshots/screenshot03a.jpg</screenshot>
 		</assets>
 		<news>
+[B]Update - v2.6.5 - April 3, 2019[/B]
+[I]-- new list driven system for provider management, a dev thing to make life easier[/I]
+[I]-- few new hosters added[/I]
+[I]-- fixed "Tools"-"Clear Sources" from opening addon settings menu[/I]
 
 [B]Update - v2.6.4 - March 30, 2019[/B]
 [I]-- Missed removed an old Lamda setting in 2.6.3[/I]
