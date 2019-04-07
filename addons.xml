@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.venom" version="2.6.7" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
+<addon id="plugin.video.venom" version="2.6.7a" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
 
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -31,9 +31,11 @@
 			<screenshot>resources/screenshots/screenshot03a.jpg</screenshot>
 		</assets>
 		<news>
+[B]Update - v2.6.7a - April 7, 2019[/B]
+[I]-- Resorted back to prior Trakt system till fully ready![/I]
+
 [B]Update - v2.6.7 - April 7, 2019[/B]
 [I]-- New Trakt management system cache driven with new overlays, more to come[/I]
-
 
 [B]Update - v2.6.6 - April 5, 2019[/B]
 [I]-- Added new enable/disable all providers utilizing new list management system[/I]
