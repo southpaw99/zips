@@ -1,105 +1,108 @@
+[B]Update - v2.7.1 - April 9, 2019[/B]
+[I]-- Added "Unfinished" to "My List" for Movies and TV Shows[/I]
+[I]-- Fixes to labels in "My Lists", added new % watched to Unfinsihed[/I]
+[I]-- TVdb api key now hard coded and noted in Account settings[/I]
+[I]-- Added Movie sort option for "My List" Trakt lists[/I]
+
 [B]Update - v2.7.0 - April 9, 2019[/B]
-[I]-- Fixes and changes to the new Trakt cache system and overlays[/I]
-
-[B]Update - v2.6.7a - April 7, 2019[/B]
-[I]-- Resorted back to prior Trakt system till fully ready![/I]
-
+[I]-- Fixes and changes to the new Trakt cache system and overlays[/I]
+
 [B]Update - v2.6.7 - April 7, 2019[/B]
-[I]-- New Trakt management system cache driven with new overlays, more to come[/I]
-
+[I]-- New Trakt management system cache driven with new overlays, more to come[/I]
+
 [B]Update - v2.6.6 - April 5, 2019[/B]
 [I]-- Added new enable/disable all providers utilizing new list management system[/I]
-[I]-- few new Torrents added[/I]
-
-[B]Update - v2.6.5 - April 3, 2019[/B]
-[I]-- new list driven system for provider management, a dev thing to make life easier[/I]
-[I]-- few new hosters added[/I]
-[I]-- fixed "Tools"-"Clear Sources" from opening addon settings menu[/I]
-
-[B]Update - v2.6.4 - March 30, 2019[/B]
-[I]-- Missed removing an old Lamda setting in 2.6.3[/I]
-[I]-- rigorously tested and removed non working Hosters, added a few new ones[/I]
-
-[B]Update - v2.6.3 - March 29, 2019[/B]
-[I]-- Fixed a few scraper defaults[/I]
-[I]-- Renamed SD setting under filter option for clearer understnading of it's purpose [/I]
-
-[B]Update - v2.6.2 - March 28, 2019[/B]
-[I]-- Lambda Scraper module is now a thing of the past.  All scrapers are now in addon settings[/I]
+[I]-- few new Torrents added[/I]
 
-[B]Update - v2.6.1 - March 27, 2019[/B]
-[I]-- Fixed remaining missing artwork in Trakt History and OnDeck[/I]
-[I]-- removed interface option for "Unknown video info key", not needed[/I]
-[I]-- swap out old Fanart.tv dev API key for good working one, does not impact Persoanl API key[/I]
+[B]Update - v2.6.5 - April 3, 2019[/B]
+[I]-- new list driven system for provider management, a dev thing to make life easier[/I]
+[I]-- few new hosters added[/I]
+[I]-- fixed "Tools"-"Clear Sources" from opening addon settings menu[/I]
 
-[B]Update - v2.6.0 - March 25, 2019[/B]
-[I]-- Updated modules[/I]
-[I]-- fix "My List" Broke Progress and Episodes list in last update[/I]
-[I]-- Solved query broken under Leia.  Can now jump to specific sections in other settings again[/I]
-[I]-- added new setting to fix the "Unknown video info key" log errors for Leia[/I]
-[I]-- partially solved missing artwork in Trakt OnDeck and Hisotry, soon will be fixed[/I]
+[B]Update - v2.6.4 - March 30, 2019[/B]
+[I]-- Missed removing an old Lamda setting in 2.6.3[/I]
+[I]-- rigorously tested and removed non working Hosters, added a few new ones[/I]
 
-[B]Update - v2.5.0 - March 22, 2019[/B]
-[I]-- Fixed My Lists, New Movie and Episodes infrequent response to being turned on and off[/I]
+[B]Update - v2.6.3 - March 29, 2019[/B]
+[I]-- Fixed a few scraper defaults[/I]
+[I]-- Renamed SD setting under filter option for clearer understnading of it's purpose [/I]
 
-[B]Update - v2.6.7 - April 7, 2019[/B]
-[I]-- New Trakt management system cache driven with new overlays, more to come[/I]
-
-[B]Update - v2.4.9 - March 20, 2019[/B]
-[I]-- Fixed broken def that effected most of the Trakt links in My Lists[/I]
-
-[B]Update - v2.4.8 - March 19, 2019[/B]
-[I]-- Fixed Hide in Cinema option and added new slider to set how many months back you wish to go.
-  6 works perfect imo and removes movies playing in theaters[/I]
-
-[B]Update - v2.4.7 - March 17, 2019[/B]
-[I]-- Fixed up "My List" Section.  Few broken links fixed.  Also grouped the list to keep Trakt and IMdb together[/I]
-
-[B]Update - v2.4.6 - March 16, 2019[/B]
-[I]-- Added Christmas collection with option to enable/disable in settings[/I]
-
-[B]Update - v2.4.5 - March 15 2019[/B]
-[I]-- Conlidation of Addons![/I]
-[I]-- Moved script.module.venom to plugin[/I]
-[I]-- Moved script.venom.artwork to plugin[/I]
-[I]-- Deleted script.venom.metada, purely uses just the meta.db cache file in userdata now[/I]
-[I]-- The above 3 scripts will now be listed under dependencies as "orphaned" so uninstall them![/I]
-
-[B]Update - v2.4.4 - March 13, 2019[/B]
-[I]-- Added color option for unaired episodes[/I]
-[I]-- Removed Alluc account[/I]
-[I]-- Removed Segos account[/I]
-[I]-- Added Gostream account settings[/I]
-
-[B]Update - v2.4.3 - March 7, 2019[/B]
-[I]-- Few fixes to Collections movie section[/I]
-
-[B]Update - 2.4.2 - March 4, 2019[/B]
-[I]-- Fixed Certificates section for IMDB adress change[/I]
-
-[B]Update - 2.4.0 - March 1, 2019[/B]
-[I]-- One more settings page change to address Leia bugs[/I]
-
-[B]Update - 2.3.9 - Feb. 27, 2019[/B]
-[I]-- Restructured settings page to address Leia bugs[/I]
-
-[B]Update - 2.3.8 - Feb. 26, 2019[/B]
-[I]-- Account settings fixes[/I]
-
-[B]Update - 2.3.7 - Feb. 25, 2019[/B]
-[I]-- Added hidden Trakt username to settings[/I]
-[I]-- for visual confirmation of Authentication[/I]
-
-[B]Update - 2.3.6 - Feb. 23, 2019[/B]
-[I]-- Setting page fixes for Leia changes[/I]
-[I]-- Takt fixes - [/I]
-[I]-- Resume playback fix (Eggman)[/I]
-
-[B]Update - 2.3.5 - Feb. 21, 2019[/B]
-[I]-- updated lang ID's[/I]
-
-[B]Update - 2.2 - Feb. 20, 2019[/B]
-[I]-- Play trailer fix under Leia-Eggman![/I]
-
-[B]Update - 2.1 - Feb. 19, 2019[/B]
+[B]Update - v2.6.2 - March 28, 2019[/B]
+[I]-- Lambda Scraper module is now a thing of the past.  All scrapers are now in addon settings[/I]
+
+[B]Update - v2.6.1 - March 27, 2019[/B]
+[I]-- Fixed remaining missing artwork in Trakt History and OnDeck[/I]
+[I]-- removed interface option for "Unknown video info key", not needed[/I]
+[I]-- swap out old Fanart.tv dev API key for good working one, does not impact Persoanl API key[/I]
+
+[B]Update - v2.6.0 - March 25, 2019[/B]
+[I]-- Updated modules[/I]
+[I]-- fix "My List" Broke Progress and Episodes list in last update[/I]
+[I]-- Solved query broken under Leia.  Can now jump to specific sections in other settings again[/I]
+[I]-- added new setting to fix the "Unknown video info key" log errors for Leia[/I]
+[I]-- partially solved missing artwork in Trakt OnDeck and Hisotry, soon will be fixed[/I]
+
+[B]Update - v2.5.0 - March 22, 2019[/B]
+[I]-- Fixed My Lists, New Movie and Episodes infrequent response to being turned on and off[/I]
+
+[B]Update - v2.6.7 - April 7, 2019[/B]
+[I]-- New Trakt management system cache driven with new overlays, more to come[/I]
+
+[B]Update - v2.4.9 - March 20, 2019[/B]
+[I]-- Fixed broken def that effected most of the Trakt links in My Lists[/I]
+
+[B]Update - v2.4.8 - March 19, 2019[/B]
+[I]-- Fixed Hide in Cinema option and added new slider to set how many months back you wish to go.
+  6 works perfect imo and removes movies playing in theaters[/I]
+
+[B]Update - v2.4.7 - March 17, 2019[/B]
+[I]-- Fixed up "My List" Section.  Few broken links fixed.  Also grouped the list to keep Trakt and IMdb together[/I]
+
+[B]Update - v2.4.6 - March 16, 2019[/B]
+[I]-- Added Christmas collection with option to enable/disable in settings[/I]
+
+[B]Update - v2.4.5 - March 15 2019[/B]
+[I]-- Conlidation of Addons![/I]
+[I]-- Moved script.module.venom to plugin[/I]
+[I]-- Moved script.venom.artwork to plugin[/I]
+[I]-- Deleted script.venom.metada, purely uses just the meta.db cache file in userdata now[/I]
+[I]-- The above 3 scripts will now be listed under dependencies as "orphaned" so uninstall them![/I]
+
+[B]Update - v2.4.4 - March 13, 2019[/B]
+[I]-- Added color option for unaired episodes[/I]
+[I]-- Removed Alluc account[/I]
+[I]-- Removed Segos account[/I]
+[I]-- Added Gostream account settings[/I]
+
+[B]Update - v2.4.3 - March 7, 2019[/B]
+[I]-- Few fixes to Collections movie section[/I]
+
+[B]Update - 2.4.2 - March 4, 2019[/B]
+[I]-- Fixed Certificates section for IMDB adress change[/I]
+
+[B]Update - 2.4.0 - March 1, 2019[/B]
+[I]-- One more settings page change to address Leia bugs[/I]
+
+[B]Update - 2.3.9 - Feb. 27, 2019[/B]
+[I]-- Restructured settings page to address Leia bugs[/I]
+
+[B]Update - 2.3.8 - Feb. 26, 2019[/B]
+[I]-- Account settings fixes[/I]
+
+[B]Update - 2.3.7 - Feb. 25, 2019[/B]
+[I]-- Added hidden Trakt username to settings[/I]
+[I]-- for visual confirmation of Authentication[/I]
+
+[B]Update - 2.3.6 - Feb. 23, 2019[/B]
+[I]-- Setting page fixes for Leia changes[/I]
+[I]-- Takt fixes - [/I]
+[I]-- Resume playback fix (Eggman)[/I]
+
+[B]Update - 2.3.5 - Feb. 21, 2019[/B]
+[I]-- updated lang ID's[/I]
+
+[B]Update - 2.2 - Feb. 20, 2019[/B]
+[I]-- Play trailer fix under Leia-Eggman![/I]
+
+[B]Update - 2.1 - Feb. 19, 2019[/B]
 [I]--  Reorganized settings menu[/I]
