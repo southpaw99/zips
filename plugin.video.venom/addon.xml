@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.venom" version="2.7.1" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
+<addon id="plugin.video.venom" version="2.7.2" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
 
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -30,7 +30,10 @@
 			<screenshot>resources/screenshots/screenshot03a.jpg</screenshot>
 		</assets>
 		<news>
-[B]Update - v2.7.1 - April 9, 2019[/B]
+[B]Update - v2.7.2 - April 14, 2019[/B]
+[I]-- Scraper Cleanup and sources.py adjustment to dialog count[/I]
+
+[B]Update - v2.7.1 - April 13, 2019[/B]
 [I]-- Added "Unfinished" to "My List" for Movies and TV Shows[/I]
 [I]-- Fixes to labels in "My Lists", added new % watched to Unfinsihed[/I]
 [I]-- TVdb api key now hard coded and noted in Account settings[/I]
@@ -54,6 +57,7 @@
 [B]Update - v2.6.4 - March 30, 2019[/B]
 [I]-- Missed removed an old Lamda setting in 2.6.3[/I]
 [I]-- rigorously tested and removed non working Hosters, added a few new ones[/I]
+
 
 [B]Update - v2.6.3 - March 29, 2019[/B]
 [I]-- Fixed a few scraper defaults[/I]
@@ -126,6 +130,7 @@
 [I]-- Setting page fixes for Leia changes[/I]
 [I]-- Takt fixes - [/I]
 [I]-- Resume playback fix (Eggman)[/I]
+
 
 [B]Update - 2.3.5 - Feb. 21, 2019[/B]
 [I]-- updated lang ID's[/I]

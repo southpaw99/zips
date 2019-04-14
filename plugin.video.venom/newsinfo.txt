@@ -1,17 +1,20 @@
-[B]Update - v2.7.1 - April 9, 2019[/B]
+[B]Update - v2.7.2 - April 14, 2019[/B]
+[I]-- Scraper Cleanup and sources.py adjustment to dialog count[/I]
+
+[B]Update - v2.7.1 - April 13, 2019[/B]
 [I]-- Added "Unfinished" to "My List" for Movies and TV Shows[/I]
 [I]-- Fixes to labels in "My Lists", added new % watched to Unfinsihed[/I]
 [I]-- TVdb api key now hard coded and noted in Account settings[/I]
 [I]-- Added Movie sort option for "My List" Trakt lists[/I]
 
-[B]Update - v2.7.0 - April 9, 2019[/B]
-[I]-- Fixes and changes to the new Trakt cache system and overlays[/I]
+[B]Update - v2.7.0 - April 9, 2019[/B]
+[I]-- Fixes and changes to the new Trakt cache system and overlays[/I]
 
-[B]Update - v2.6.7 - April 7, 2019[/B]
+[B]Update - v2.6.7 - April 7, 2019[/B]
 [I]-- New Trakt management system cache driven with new overlays, more to come[/I]
 
-[B]Update - v2.6.6 - April 5, 2019[/B]
-[I]-- Added new enable/disable all providers utilizing new list management system[/I]
+[B]Update - v2.6.6 - April 5, 2019[/B]
+[I]-- Added new enable/disable all providers utilizing new list management system[/I]
 [I]-- few new Torrents added[/I]
 
 [B]Update - v2.6.5 - April 3, 2019[/B]
