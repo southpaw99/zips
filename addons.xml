@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.venom" version="2.7.4" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
+<addon id="plugin.video.venom" version="2.7.5" name="[B][COLOR red]Venom[/COLOR][/B]" provider-name="Venom">
 
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -31,6 +31,11 @@
 			<screenshot>resources/screenshots/screenshot03a.jpg</screenshot>
 		</assets>
 		<news>
+[B]Update - v2.7.5 - April 20, 2019[/B]
+[I]-- Fixed random Trakt/IMDB lists missing from user lists[/I]
+[I]-- changed user list icon from boook to either Trakt or IMDB to be more descriptive of where list came from[/I]
+[I] Fixed random Shows Plot from being dropped[/I]
+
 [B]Update - v2.7.4 - April 19, 2019[/B]
 [I]-- Fix TV Show Calendar[/I]
 [I]-- few more artwork adjustments to "MY Lists"[/I]
