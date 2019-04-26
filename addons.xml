@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.venom" version="2.7.7" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
+<addon id="plugin.video.venom" version="2.7.8" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
 
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -31,6 +31,10 @@
 			<screenshot>resources/screenshots/screenshot03a.jpg</screenshot>
 		</assets>
 		<news>
+[B][COLOR red]Update - v2.7.8 - April 26, 2019[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Scaper fix, 3 Torrents fixed.  Due to number of links being pulled default
+   is now set to premeptive termination and forced HD quality, scrape and play is very fastest in this method[/I]
+
 [B][COLOR red]Update - v2.7.7 - April 25, 2019[/COLOR][/B]
 [COLOR yellow]--[/COLOR][I] Scraper cleanup.  Fixed broken scraper terminating scrape early, losing a number
    of Debrid sources![/I]
