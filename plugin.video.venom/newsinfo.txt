@@ -1,23 +1,32 @@
+[B][COLOR red]Update - v2.7.9 - April 29, 2019[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Added new options to Trakt Manager, Watched, Unwatched, Rate,
+   and Unrate.  Main function of List items now in Bold and Color to stand out[/I]
+[COLOR yellow]--[/COLOR][I] Renamed context menu "Play" options.  Now when set to "Auto Play". Then
+  context menu will have option called "Source Select" to override "AutoPlay",
+  formerly "Play using..", made little sense what the function did.  Works in reverse
+  if default play action is "Directory" you'll see "Auto Play"  as usual[/I]
+[COLOR yellow]--[/COLOR][I] Renamed context menu "Queue Item" to "Add to Playlist" to better follow suit
+  with new Playlist options coming soon[/I]
+
 [B][COLOR red]Update - v2.7.8 - April 26, 2019[/COLOR][/B]
 [COLOR yellow]--[/COLOR][I] Scaper fix, 3 Torrents fixed.  Due to number of links being pulled default
    is now set to premeptive termination and forced HD quality, scrape and play is very fastest in this method[/I]
 
 [B][COLOR red]Update - v2.7.7 - April 25, 2019[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Scraper cleanup.  Fixed broken scraper terminating scrape early, losing a number
-   of Debrid sources![/I]
+[COLOR yellow]--[/COLOR][I] Scraper cleanup.  Fixed broken scraper terminating scrape early, losing a
+   number of Debrid sources![/I]
 [COLOR yellow]--[/COLOR][I] cfscrape update[/I]
 
-[B][COLOR red]Update - v2.7.6 - April 22, 2019[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Added clearart and clearlogo to metadata for vosd controls logo show in
-    movies and episodes.[/I]
-[COLOR yellow]--[/COLOR][I] code cleanup, and partial work on UpNext integration, coming soon![/I]
-[COLOR yellow]--[/COLOR][I] Added a few new boxsets to collections[/I]
-
-[B][COLOR red]Update - v2.7.5 - April 20, 2019[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed random Trakt/IMDB lists missing from user lists[/I]
-[COLOR yellow]--[/COLOR][I] changed user list icon from book to either Trakt or IMDB to be more descriptive
-    of where list came from[/I]
-[COLOR yellow]--[/COLOR][I] Fixed random Shows Plot from being dropped[/I]
+[B][COLOR red]Update - v2.7.6 - April 22, 2019[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Added clearart and clearlogo to metadata for vosd controls logo show in
+    movies and episodes.[/I]
+[COLOR yellow]--[/COLOR][I] code cleanup, and partial work on UpNext implementation, coming soon![/I]
+
+[B][COLOR red]Update - v2.7.5 - April 20, 2019[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Fixed random Trakt/IMDB lists missing from user lists[/I]
+[COLOR yellow]--[/COLOR][I] changed user list icon from book to either Trakt or IMDB to be more descriptive
+    of where list came from[/I]
+[COLOR yellow]--[/COLOR][I] Fixed random Shows Plot from being dropped[/I]
 
 [B][COLOR red]Update - v2.7.4 - April 19, 2019[/COLOR][/B]
 [COLOR yellow]--[/COLOR][I] Fix TV Show Calendar[/I]

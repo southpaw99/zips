@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.venom" version="2.7.8" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
+<addon id="plugin.video.venom" version="2.7.9" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
 
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -30,13 +30,24 @@
 			<screenshot>resources/screenshots/screenshot03a.jpg</screenshot>
 		</assets>
 		<news>
+		<news>
+[B][COLOR red]Update - v2.7.9 - April 29, 2019[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Added new options to Trakt Manager, Watched, Unwatched, Rate,
+   and Unrate.  Main function of List items now in Bold and Color to stand out[/I]
+[COLOR yellow]--[/COLOR][I] Renamed context menu "Play" options.  Now when set to "Auto Play". Then
+  context menu will have option called "Source Select" to override "AutoPlay",
+  formerly "Play using..", made little sense what the function did.  Works in reverse
+  if default play action is "Directory" you'll see "Auto Play"  as usual[/I]
+[COLOR yellow]--[/COLOR][I] Renamed context menu "Queue Item" to "Add to Playlist" to better follow suit
+  with new Playlist options coming soon[/I]
+
 [B][COLOR red]Update - v2.7.8 - April 26, 2019[/COLOR][/B]
 [COLOR yellow]--[/COLOR][I] Scaper fix, 3 Torrents fixed.  Due to number of links being pulled default
    is now set to premeptive termination and forced HD quality, scrape and play is very fastest in this method[/I]
 
 [B][COLOR red]Update - v2.7.7 - April 25, 2019[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Scraper cleanup.  Fixed broken scraper terminating scrape early, losing a number
-   of Debrid sources![/I]
+[COLOR yellow]--[/COLOR][I] Scraper cleanup.  Fixed broken scraper terminating scrape early, losing a
+   number of Debrid sources![/I]
 [COLOR yellow]--[/COLOR][I] cfscrape update[/I]
 
 [B][COLOR red]Update - v2.7.6 - April 22, 2019[/COLOR][/B]
