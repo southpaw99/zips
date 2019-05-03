@@ -1,3 +1,11 @@
+[B][COLOR red]Update - v2.8.1 - May 3, 2019[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Now using Openscrapers for source providers!
+   Torrent min seeder option now part of Openscraper settings.[/I]
+[COLOR yellow]--[/COLOR][I] Some accounts moved to Openscrapers,
+   remaining unused accounts have been removed[/I]
+[COLOR yellow]--[/COLOR][I] Renamed settings page category "Accounts" to
+   "API Keys" to follow what stricly now resides there[/I]
+
 [B][COLOR red]Update - v2.8.0 - April 30, 2019[/COLOR][/B]
 [COLOR yellow]--[/COLOR][I] New Notification function for additional info.
    Default InfoDialog() reported Addon Name as heading/Title, and now
