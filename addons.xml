@@ -38,7 +38,7 @@
 [B][COLOR red]Update - v2.8.9 - May 19, 2019[/COLOR][/B]
 [COLOR yellow]--[/COLOR][I] Fixed some broken artwork and studio info for
    TV Shows "Networks".[/I]
-[COLOR yellow]--[/COLOR][I] Added clearart & clearlogo to "Networks". Will
+[COLOR yellow]--[/COLOR][I] Added clearart and clearlogo to "Networks". Will
    display in player.[/I]
 [COLOR yellow]--[/COLOR][I] Added Trakt watched sync as startup service if valid
    account.[/I]
