@@ -2,8 +2,8 @@
 [COLOR yellow]--[/COLOR][I] UpNext integration info.
 [COLOR yellow]--[/COLOR][I] Please note this release requires the latest release of UpNext,
     version 1.0.1, that can be found in the Kodi repo and was released on
-    Jun 18, 2019.  Version 1.0.0 has a few communication issues that were
-    resolved in 1.0.1.  You will notice occasional missing UpNext notifications
+    un 18, 2019.  Version 1.0.0 has a few communication issues that were
+    esolved in 1.0.1.  You will notice occasional missing UpNext notifications
     with v1.0.0 so please be sure to check this.  Thank you Ian for resolving
     this issue!![/I]
 [COLOR yellow]--[/COLOR][I] For now the best way to use UpNext is with the Kodi context
@@ -28,4 +28,3 @@
     bit of a bug calling this playlist for direct play.  I also want to add a pre-scrape ability so next
     episode play is instant without a visible scrape process, but timing it the scrape takes about
     3-5secs for the next episode to play as it is now so I didn't holdback this release[/I]
-
