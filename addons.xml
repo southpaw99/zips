@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.venom" version="2.9.5" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
+<addon id="plugin.video.venom" version="2.9.6" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
 
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="script.module.requests" />
-		<import addon="script.module.beautifulsoup4" />
-		<import addon="script.module.metahandler" />
+		<import addon="script.module.requests" version="2.19.1" />
+		<import addon="script.module.beautifulsoup4" version="4.5.3"/>
+		<import addon="script.module.metahandler" version="1.0.0" />
+		<import addon="plugin.video.youtube" version="6.2.0"/>
 		<import addon="script.module.resolveurl" />
 		<import addon="script.module.openscrapers" />
+		<import addon="script.module.addon.signals" version="0.0.1"/>
 	</requires>
 
 	<extension point="xbmc.python.pluginsource" library="venom.py">
@@ -35,9 +37,21 @@
 			<screenshot>resources/screenshots/screenshot03a.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v2.9.5 - June 2, 2019[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Added Movie Collection sorting controlled in settings[/I]
-[COLOR yellow]--[/COLOR][I] Fixed cache duration[/I]
+[B][COLOR red]Update - v2.9.6 - June 19, 2019[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] initial release of UpNext integration[/I]
+[COLOR yellow]--[/COLOR][I] Please read the newsinfo for an indepth help on UpNext[/I]
+[COLOR yellow]--[/COLOR][I] fixed listitems and playlist not closing when using "Play from
+    Here" or starting playback from inside the "Playlist Manager"-"View Playlist"[/I]
+[COLOR yellow]--[/COLOR][I] Added new Bookmark cache clear option[/I]
+[COLOR yellow]--[/COLOR][I] Changed resume bookmark to yes-no dialog to deal
+    with occasional bug in contextmenu[/I]
+[COLOR yellow]--[/COLOR][I] Added a notification when you stop a movie, or episode,
+    that a resume point, and timestamp, was saved if bookmarks are enabled[/I]
+[COLOR yellow]--[/COLOR][I] Changed functionality of Episode counters.  Previously if you
+    watched an entire season the season list would change to a watched indicator only.  Now
+    the episode count will be remain visible regardless of watch count.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed Special Seasons, or Season 0, from not being displayed.
+    Adjusted episode counter to take this Season 0 into account for totals[/I]
 		</news>
 	</extension>
 
@@ -173,23 +187,24 @@
   </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.31" provider-name="jsergio">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="plugin.video.youtube" optional="true" />
-		<import addon="script.module.python.twitch" optional="true" />
-		<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
-		<import addon="plugin.video.gdrive" optional="true" />
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
-		<summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
-		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
-		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
-		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
-	</extension>
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.32" provider-name="jsergio">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="plugin.video.youtube" optional="true" />
+        <import addon="script.module.python.twitch" optional="true" />
+        <import addon="script.module.cryptopy" version="1.2.6" optional="true" />
+        <import addon="plugin.video.gdrive" optional="true" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="lib/default.py" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+        <summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
+        <summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+        <summary lang="el">Επίλυση συνδέσμων κοινών εξυπηρετητών σε μορφή βίντεο ικανό για αναπαραγωγή στο XBMC/Kodi.</summary>
+        <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+        <description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
+    </extension>
 </addon>
 </addons>
