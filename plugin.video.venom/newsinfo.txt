@@ -11,19 +11,22 @@
     if you used "Play from Here" so this play method for me became annoying.  I've fixed
     this and episode list items, and playlist, now close. [/I]
 [COLOR yellow]--[/COLOR][I] Due to the above I was forced to hard code Auto Play for Episodes.
-    This was needed for the "Play from Here" context menu option to work in continual episode play
-    of an entire season.  If you select a single episode only that episode will play, but with Auto Play
-    still in effect.  If you disable UpNext this removes the hard code. If you wish to bypass Auto Play
-    for a single episode I suggest using the context menu option "Select Source" for the item you wish
-    to single play without Auto Play enabled[/I]
+    This was needed for the "Play from Here" context menu option to work in continual
+    episode play of an entire season.  If you select a single episode only that episode
+    will play, but with Auto Play still in effect.  If you disable UpNext this removes the
+    hard code. If you wish to bypass Auto Play for a single episode I suggest using the
+    context menu option "Select Source" for the item you wish to single play without
+    Auto Play enabled[/I]
 [COLOR yellow]--[/COLOR][I] The Auto playlist creation is on by default and this is done behind
-    closed doors with no effect on performance at all.  You can try with and without this feature on
-    and you will not notice even the slightest difference so I suggest leaving it on.  At this time the
-    only thing this does is when you enter a Season the playlist will create a full episode list for the
-    given Season you entered only.  Entering the "Playlist Manager" you could view, edit,  and play
-    this list. Future plans for this playlist as well.[/I]
+    closed doors with no effect on performance at all.  You can try with and without
+    this feature on and you will not notice even the slightest difference so I suggest
+    leaving it on.  At this time the only thing this does is when you enter a Season
+    the playlist will create a full episode list for the given Season you entered only.
+    Entering the "Playlist Manager" you could view, edit,  and play this list. Future
+    plans for this playlist as well.[/I]
 [COLOR yellow]--[/COLOR][I] The goal for next update is to get the playlist to play from a single
-    episode selection, so you won't have to use "Play from Here" but at this time I'm dealing with a
-    bit of a bug calling this playlist for direct play.  I also want to add a pre-scrape ability so next
-    episode play is instant without a visible scrape process, but timing it the scrape takes about
-    3-5secs for the next episode to play as it is now so I didn't holdback this release[/I]
+    episode selection, so you won't have to use "Play from Here" but at this time
+    I'm dealing with a bit of a bug calling this playlist for direct play.  I also want to
+    add a pre-scrape ability so next episode play is instant without a visible scrape
+    process, but timing it the scrape takes about 3-5secs for the next episode to
+    play as it is now so I didn't holdback this release[/I]
