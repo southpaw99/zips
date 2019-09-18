@@ -1223,6 +1223,7 @@ class Movies:
 		if next:
 			try:
 				url = items[0]['next']
+				log_utils.log('url = %s' % str(url), __name__, log_utils.LOGDEBUG)
 				if url == '':
 					raise Exception()
 
