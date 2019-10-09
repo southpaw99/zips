@@ -1,3 +1,15 @@
+[B][COLOR red]October 9, 2019[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Wow, I did not realize it's been months
+    since I added comments here.  I wanted to inform
+    people at this current time there are issues with
+    TMDb user lists.  It seems that some users have
+    reported to TMDb that titles are being dropped
+    from their lists.  I noticed in the Movies-Collections
+    many lists seem to now have missing titles so I'm
+    hit with this new issue myself.  I reported this to
+    TMDb and it's been confirmed and they are
+    looking into it.[/I]
+
 [B][COLOR red]July 25, 2019[/COLOR][/B]
 [COLOR yellow]--[/COLOR][I] Working on a new Trakt list where it will
     follow our "Page Item Limit" setting and this should
@@ -92,7 +104,6 @@
 [COLOR yellow]--[/COLOR][I] For now the best way to use UpNext is with the Kodi
     context menu option "Play from Here" or from within
     the "Playlist Manager" - "View Playlist"[/I]
-
 [COLOR yellow]--[/COLOR][I] Previously all exo forks refused to close the episode
     list items if you used "Play from Here" so this play
     method for me became annoying.  I've fixed this
@@ -129,4 +140,3 @@
     scrape process, but timing it the scrape takes
     about 3-5secs for the next episode to play as
     it is now so I didn't holdback this release[/I]
-
