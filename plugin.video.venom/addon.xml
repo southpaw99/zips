@@ -55,6 +55,10 @@
     deleted but instead Kodi zeroes out the values so it's
     not seen.  This has been fixed to remove those old
     entries when using the auto folder setup process.[/I]
+[COLOR yellow]--[/COLOR][I] Removed link caching process outside of Venom due
+    to no global context menu to "Rescrape".  Global
+    context menu options are in the works so this is a
+    temp solution.[/I]
 		</news>
 	</extension>
 </addon>
