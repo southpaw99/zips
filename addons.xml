@@ -46,7 +46,7 @@
     means is urllib2.urlopen() request works for some shows
     while requests.get() works for others.  When the request
     does not satisfy the SSL requirement the response xml's
-    are empty yet server still responds with <Response 200>
+    are empty yet server still responds with &lt;Response 200&gt;
     I've now coded a check for the first request and if the xml's
     are empty then we'll use requests.get().  This appears to now
     get all shows back to laoding season/episode lists.[/I]
