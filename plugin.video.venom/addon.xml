@@ -43,7 +43,7 @@
     items to watch due to TVDB v1 api season/episodes out
     of order in xml.  The xml sort order was changed to be
     based on ID's and no longer sorted by season/episode.[/I]
-COLOR yellow]--[/COLOR][I] Added translation lookup for title and plot when language
+[COLOR yellow]--[/COLOR][I] Added translation lookup for title and plot when language
  changed from English.[/I]
 		</news>
 	</extension>
