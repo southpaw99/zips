@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.venom" version="3.5.8" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
+<addon id="plugin.video.venom" version="3.5.9" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
 
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -38,12 +38,13 @@
 			<screenshot>resources/screenshots/screenshot03a.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v3.5.8 - March 29, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed issue with random innacurate seasoncount.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed issue with random innacurate resume point
-    saved. Issue would lose progress indicators for some shows.[/I]
-[COLOR yellow]--[/COLOR][I] added notification when resolveURL fails for
-    cached torrents.[/I]
+[B][COLOR red]Update - v3.5.9 - March 30, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Removed resolveURL notification of from previous
+    update.[/I]
+[COLOR yellow]--[/COLOR][I] Updated bookmarks caching method to now also
+    record show name and year for better tracking of
+    progress indicators.  This requires you to clear old
+    bookmarks for the new update to be in use.[/I]
 		</news>
 	</extension>
 </addon>
