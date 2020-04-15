@@ -43,7 +43,7 @@
 [COLOR yellow]--[/COLOR][I] fixed typo with RD uncached torrent removal
     using PM setting.[/I]
 [COLOR yellow]--[/COLOR][I] fixed issue with RD uncached torrent check
-    failing due to RD response converting hases to
+    failing due to RD response converting hashes to
     lower case.[/I]
 [COLOR yellow]--[/COLOR][I] fixed Trakt Progress episode sort issue from
     Trakt response.[/I]
