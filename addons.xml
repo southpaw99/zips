@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="context.venom" version="1.0.2" name="Venom - Global Context Menu Items" provider-name="Venom">
+<addon id="context.venom" version="1.0.3" name="Venom - Global Context Menu Items" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.23.0" />
 	</requires>
@@ -45,15 +45,15 @@
 				</visible>
 			</item>
 
-<!-- 			<item library="playFromHere.py">
+			<item library="playFromHere.py">
 				<label>[B][COLOR red]Venom[/COLOR][/B] - Play from here</label>
 				<visible>
 					String.IsEqual(Window(home).Property(context.venom.playFromHere),true) +
-					String.StartsWith(ListItem.FolderPath,plugin://plugin.video.venom/?action=play) +
+					String.StartsWith(ListItem.path,plugin://plugin.video.venom/) +
 					String.IsEqual(ListItem.Property(isVenom_widget),true) +
 					String.IsEqual(ListItem.dbtype,episode)
 				</visible>
-			</item> -->
+			</item>
 
 			<item library="autoPlay.py">
 				<label>[B][COLOR red]Venom[/COLOR][/B] - Auto Play</label>
@@ -124,18 +124,17 @@
 			<fanart>fanart.png</fanart>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.0.2 - April 29, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed Rescrape option showing on unplayable items.[/I]
-[COLOR yellow]--[/COLOR][I] Added settings options to turn on and off context menu items.[/I]
-[COLOR yellow]--[/COLOR][I] Added Auto Play and Source Select context menu options to
-    be inverse of addon play method chosen.[/I]
-[COLOR yellow]--[/COLOR][I] Some options did not return to homescreen on back, this is
-    now fixed.[/I]
+[B][COLOR red]Update - v1.0.3 - May 6, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Added "Play from Here" ability for continual episode playback.
+    Progress widget can now play all episodes from
+    UpNext/Progress point forward. Playlist is built and
+    autoplay begins upon selection.  Also added setting
+    to enable or disable new option in settings.[/I]
 		</news>
 	</extension>
 </addon>
 
-<addon id="plugin.video.venom" version="3.6.2" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
+<addon id="plugin.video.venom" version="3.6.3" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
 
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
