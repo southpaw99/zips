@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.venom" version="3.6.4" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
+<addon id="plugin.video.venom" version="3.6.5" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
 
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -38,8 +38,33 @@
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v3.6.4 - May 8, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed typo in downloader module.[/I]
+[B][COLOR red]Update - v3.6.5 - May 12, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Added new setting option to disable Cloudflare
+    protected providers due to recent challenge failures.[/I]
+[COLOR yellow]--[/COLOR][I] Reorganized all settings under "Source Options"
+    to better follow the flow of scrapping from start to results.[/I]
+[COLOR yellow]--[/COLOR][I] Changed all Source filtering options to be "Remove"
+    options.  Previously options were "Enable" or "Remove"
+    and this just seems to be cleaner.[/I]
+[COLOR yellow]--[/COLOR][I] Added new setting option "Allow Rescrape to first
+    clear item providers".  Previously Rescrape would only
+    cache new providers and read in previously cached providers.
+    Now you have the option to make Rescrape fully start from
+    scratch for the selected item.  This option will only clear
+    provider links for the item you are selecting, this is not a full "Clear
+    Providers" built in function.[/I]
+[COLOR yellow]--[/COLOR][I] Improved scrape time.[/I]
+[COLOR yellow]--[/COLOR][I] Added IMDBNUMBER to episode InfoLabels for a4ksubtitles.[/I]
+[COLOR yellow]--[/COLOR][I] Improved meta data handling to deal with TMDBHELPER's
+    limited meta exchange.  Now the Venomplayer will look in
+    the Venom cache and compare against the meta received
+    from TMDBHELPER and use the larger of the two.[/I]
+[COLOR yellow]--[/COLOR][I] Removed context menu "Clear All Cache" and replaced in
+    movies and episodes with "Clear Providers".  Sorry
+    folks but really frowning upon clearing of metacache.[/I]
+[COLOR yellow]--[/COLOR][I] Submitted new player files to TMDBHELPER.  Now there is
+    two.."Venom (Auto Play)" and 'Venom (Source Select)".
+    be sure to update TMDBHELPER's players.[/I]
 		</news>
 	</extension>
 </addon>
