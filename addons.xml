@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+<addon id="context.trailer.mod" name="Play Trailer-Mod" version="1.0.2" provider-name="Venom">
+  <requires>
+	<import addon="xbmc.python" version="2.25.0"/>
+  </requires>
+  <extension point="kodi.context.item">
+	<menu id="kodi.core.main">
+	  <item library="addon.py">
+		<label>32000</label>
+		<visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)] + !String.IsEmpty(ListItem.Trailer)</visible>
+
+	  </item>
+	</menu>
+  </extension>
+  <extension point="kodi.addon.metadata">
+	<platform>all</platform>
+	<summary lang="en">Play a movie or show trailer from the context menu in the library.</summary>
+	<description lang="en">Adds a context menu entry for movies or shows that have a trailer in the database. Choose windowed or fullscreen play in the settings.</description>
+	<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+	<forum></forum>
+	<website>https://github.com/123Venom/context.trailer.mod</website>
+	<source>https://github.com/123Venom/context.trailer.mod</source>
+  </extension>
+</addon>
+
 <addon id="context.venom" version="1.0.4" name="Venom - Global Context Menu Items" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.23.0" />
@@ -128,8 +152,8 @@
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
 		<forum></forum>
-		<website></website>
-		<source></source>
+		<website>https://github.com/123Venom/context.venom</website>
+		<source>https://github.com/123Venom/context.venom</source>
 		<disclaimer lang="en"></disclaimer>
 		<assets>
 			<icon>icon.png</icon>
