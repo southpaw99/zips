@@ -40,8 +40,8 @@
 [COLOR yellow]--[/COLOR][I] Added missing clearlogo and clearart at season level.[/I]
 [COLOR yellow]--[/COLOR][I] Unwatched count now only added to multi episode
     lists like Progress and Calendar.[/I]
-[COLOR yellow]--[/COLOR][I] Added .setProperty(tvdb_id) for episodes and
-    .setProperty(tvshow.tvdb_id) for shows for TMDBHelper
+[COLOR yellow]--[/COLOR][I] Added .setProperty(tmdb_id) for episodes and
+    .setProperty(tvshow.tmdb_id) for shows for TMDBHelper
     support of lookup.[/I]
 [COLOR yellow]--[/COLOR][I] Fixed bookmark issue mismatch in databse.[/I]
 		</news>

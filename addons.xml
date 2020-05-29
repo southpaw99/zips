@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="context.trailer.mod" name="Play Trailer Mod" version="1.0.2" provider-name="Venom">
+<addon id="context.trailer.mod" name="Play Trailer Mod" version="1.0.3" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 	</requires>
 	<extension point="kodi.context.item">
 		<menu id="kodi.core.main">
-			<item library="addon.py">
+			<item library="autoplay.py">
 				<label>32000</label>
 				<visible>
+					String.IsEqual(Window(home).Property(context.trailer.autoplay),true) +
 					[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)] +
 					!String.IsEmpty(ListItem.Trailer)
 				</visible>
 			</item>
+			<item library="selectplay.py">
+				<label>32001</label>
+				<visible>
+					String.IsEqual(Window(home).Property(context.trailer.selectplay),true) +
+					[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)]
+				</visible>
+			</item>
 		</menu>
 	</extension>
-
+	<extension point="xbmc.service" library="service.py" />
 	<extension point="kodi.addon.metadata">
 		<summary lang="en">Play a movie or show trailer from the context menu in the library.</summary>
 		<description lang="en">Adds a context menu entry for movies or shows that have a trailer in the database. Choose windowed or fullscreen play in the settings.</description>
@@ -29,11 +37,12 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>Modded version to allow tvshow trailer playback</news>
+		<news>v0.1.0.3
+- Added Multi source select list via google api youtube search.</news>
 	</extension>
 </addon>
 
-<addon id="context.venom" version="1.0.4" name="Venom - Global Context Menu Items" provider-name="Venom">
+<addon id="context.venom" version="1.0.5" name="Venom - Global Context Menu Items" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.23.0" />
 	</requires>
@@ -42,36 +51,33 @@
 			<item library="contextSettings.py">
 				<label>[B][COLOR red]Venom[/COLOR][/B] - CM Settings</label>
 				<visible>
-					String.IsEqual(Window(home).Property(context.venom.settings),true) +
+					!String.IsEmpty(Window(home).Property(context.venom.settings)) +
 					String.StartsWith(ListItem.path,plugin://plugin.video.venom/) +
 					String.IsEqual(ListItem.Property(isVenom_widget),true)
 				</visible>
 			</item>
-
 			<item library="traktManager.py">
 				<label>[B][COLOR red]Venom[/COLOR][/B] - Trakt Manager</label>
 				<visible>
-					String.IsEqual(Window(home).Property(context.venom.traktManager),true) +
+					!String.IsEmpty(Window(home).Property(context.venom.traktManager)) +
 					String.StartsWith(ListItem.path,plugin://plugin.video.venom/) +
 					String.IsEqual(ListItem.Property(isVenom_widget),true) +
 					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,movie)]
 				</visible>
 			</item>
-
 			<item library="clearProviders.py">
 				<label>[B][COLOR red]Venom[/COLOR][/B] - Clear Providers</label>
 				<visible>
-					String.IsEqual(Window(home).Property(context.venom.clearProviders),true) +
+					!String.IsEmpty(Window(home).Property(context.venom.clearProviders)) +
 					String.StartsWith(ListItem.FolderPath,plugin://plugin.video.venom/?action=play) +
 					String.IsEqual(ListItem.Property(isVenom_widget),true) +
 					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]
 				</visible>
 			</item>
-
 			<item library="clearBookmark.py">
 				<label>[B][COLOR red]Venom[/COLOR][/B] - Clear Item Bookmark</label>
 				<visible>
-					String.IsEqual(Window(home).Property(context.venom.clearBookmark),true) +
+					!String.IsEmpty(Window(home).Property(context.venom.clearBookmark)) +
 					String.StartsWith(ListItem.FolderPath,plugin://plugin.video.venom/?action=play) +
 					String.IsEqual(ListItem.Property(isVenom_widget),true) +
 <!-- 					!String.IsEqual(ListItem.Property(resumetime),0) + -->
@@ -79,81 +85,75 @@
 					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]
 				</visible>
 			</item>
-
 			<item library="rescrape.py">
 				<label>[B][COLOR red]Venom[/COLOR][/B] - Rescrape Item</label>
 				<visible>
-					String.IsEqual(Window(home).Property(context.venom.rescrape),true) +
+					!String.IsEmpty(Window(home).Property(context.venom.rescrape)) +
 					String.StartsWith(ListItem.FolderPath,plugin://plugin.video.venom/?action=play) +
 					String.IsEqual(ListItem.Property(isVenom_widget),true) +
 					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]
 				</visible>
 			</item>
-
 			<item library="playFromHere.py">
 				<label>[B][COLOR red]Venom[/COLOR][/B] - Play from here</label>
 				<visible>
-					String.IsEqual(Window(home).Property(context.venom.playFromHere),true) +
+					!String.IsEmpty(Window(home).Property(context.venom.playFromHere)) +
 					String.StartsWith(ListItem.path,plugin://plugin.video.venom/) +
 					String.IsEqual(ListItem.Property(isVenom_widget),true) +
 					String.IsEqual(ListItem.dbtype,episode)
 				</visible>
 			</item>
-
 			<item library="autoPlay.py">
 				<label>[B][COLOR red]Venom[/COLOR][/B] - Auto Play</label>
 				<visible>
 					String.IsEmpty(Window(home).Property(plugin.video.venom.autoPlay)) +
-					String.IsEqual(Window(home).Property(context.venom.autoPlay),true) +
+					!String.IsEmpty(Window(home).Property(context.venom.autoPlay)) +
 					String.StartsWith(ListItem.FolderPath,plugin://plugin.video.venom/?action=play) +
 					String.IsEqual(ListItem.Property(isVenom_widget),true) +
 					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]
 				</visible>
 			</item>
-
 			<item library="sourceSelect.py">
 				<label>[B][COLOR red]Venom[/COLOR][/B] - Source Select</label>
 				<visible>
 					!String.IsEmpty(Window(home).Property(plugin.video.venom.autoPlay)) +
-					String.IsEqual(Window(home).Property(context.venom.sourceSelect),true) +
+					!String.IsEmpty(Window(home).Property(context.venom.sourceSelect)) +
 					String.StartsWith(ListItem.FolderPath,plugin://plugin.video.venom/?action=play) +
 					String.IsEqual(ListItem.Property(isVenom_widget),true) +
 					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]
 				</visible>
 			</item>
-
 			<item library="findSimilar.py">
 				<label>[B][COLOR red]Venom[/COLOR][/B] - Find Similar</label>
 				<visible>
-					String.IsEqual(Window(home).Property(context.venom.findSimilar),true) +
+					!String.IsEmpty(Window(home).Property(context.venom.findSimilar)) +
 					String.StartsWith(ListItem.path,plugin://plugin.video.venom/) +
 					String.IsEqual(ListItem.Property(isVenom_widget),true) +
 					[String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,movie)]
 				</visible>
 			</item>
-
 			<item library="browseSeries.py">
 				<label>[B][COLOR red]Venom[/COLOR][/B] - Browse Series</label>
 				<visible>
-					String.IsEqual(Window(home).Property(context.venom.browseSeries),true) +
+					!String.IsEmpty(Window(home).Property(context.venom.browseSeries)) +
 					String.StartsWith(ListItem.path,plugin://plugin.video.venom/) +
 					String.IsEqual(ListItem.Property(isVenom_widget),true) +
 					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,tvshow)]
 				</visible>
 			</item>
-
 			<item library="browseEpisodes.py">
 				<label>[B][COLOR red]Venom[/COLOR][/B] - Browse Episodes</label>
 				<visible>
-					String.IsEqual(Window(home).Property(context.venom.browseEpisodes),true) +
+					!String.IsEmpty(Window(home).Property(context.venom.browseEpisodes)) +
 					String.StartsWith(ListItem.path,plugin://plugin.video.venom/) +
 					String.IsEqual(ListItem.Property(isVenom_widget),true) +
 					String.IsEqual(ListItem.dbtype,episode)
+<!-- 					[String.IsEqual(ListItem.dbtype,episode) | !String.IsEmpty(ListItem.Property(multi_episodes))] -->
 				</visible>
-			</item> -->
-
+			</item>
 		</menu>
-	</extension>
+</extension>
+	<extension point="xbmc.service" library="service.py" />
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Venom - This Addon is currently in beta. Please be aware there may be bugs present</summary>
 		<description lang="en">Adds Global Contextual Menu Items for Venom menu items throughout Kodi
@@ -161,22 +161,23 @@
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
 		<forum></forum>
-		<website>https://github.com/123Venom/context.venom</website>
-		<source>https://github.com/123Venom/context.venom</source>
+		<website></website>
+		<source></source>
 		<disclaimer lang="en"></disclaimer>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.png</fanart>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.0.4 - May 8, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Added "Clear Item Bookmark".  This will only show for items
-    with a bookmark and will clear just that item only.[/I]
+[B][COLOR red]Update - v1.0.5 - May 29, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Added service for settings changes.  This now helps items
+    to change and be more responsive than before.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed issue where wrong year wascausing bookmark issues.[/I]
 		</news>
 	</extension>
 </addon>
 
-<addon id="plugin.video.venom" version="3.6.9" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
+<addon id="plugin.video.venom" version="3.7.0" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.requests" version="2.19.1" />
@@ -188,14 +189,11 @@
 		<import addon="script.module.addon.signals" version="0.0.3"/>
 		<import addon="context.venom" version="1.0.0"/>
 	</requires>
-
 	<extension point="xbmc.python.pluginsource" library="venom.py">
 		<provides>video</provides>
 	</extension>
-
 	<extension point="xbmc.service" library="service.py" start="startup" />
 	<extension point="xbmc.python.module" library="resources/lib/"/>
-
 	<extension point="xbmc.addon.metadata">
 		<reuselanguageinvoker>false</reuselanguageinvoker> <!-- You can enable this if you want, expect some instability but much faster menu speeds -->
 		<summary lang="en">[B][COLOR red]Venom[/COLOR][/B] - We do not host any of the contents streamed</summary>
@@ -214,11 +212,16 @@
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v3.6.9 - May 20, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Added new source filtering option "File Size limit (GB)".
-    This is off by default.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed random case of fetching foreign landscape
-    from fanart.tv.[/I]
+[B][COLOR red]Update - v3.7.0 - May 29, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Increased Find Similar list to 20 items vs. 10.[/I]
+[COLOR yellow]--[/COLOR][I] Removed tagline for shows.[/I]
+[COLOR yellow]--[/COLOR][I] Added missing clearlogo and clearart at season level.[/I]
+[COLOR yellow]--[/COLOR][I] Unwatched count now only added to multi episode
+    lists like Progress and Calendar.[/I]
+[COLOR yellow]--[/COLOR][I] Added .setProperty(tmdb_id) for episodes and
+    .setProperty(tvshow.tmdb_id) for shows for TMDBHelper
+    support of lookup.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed bookmark issue mismatch in databse.[/I]
 		</news>
 	</extension>
 </addon>

@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="context.trailer.mod" name="Play Trailer Mod" version="1.0.2" provider-name="Venom">
+<addon id="context.trailer.mod" name="Play Trailer Mod" version="1.0.3" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 	</requires>
 	<extension point="kodi.context.item">
 		<menu id="kodi.core.main">
-			<item library="addon.py">
+			<item library="autoplay.py">
 				<label>32000</label>
 				<visible>
+					String.IsEqual(Window(home).Property(context.trailer.autoplay),true) +
 					[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)] +
 					!String.IsEmpty(ListItem.Trailer)
 				</visible>
 			</item>
+			<item library="selectplay.py">
+				<label>32001</label>
+				<visible>
+					String.IsEqual(Window(home).Property(context.trailer.selectplay),true) +
+					[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)]
+				</visible>
+			</item>
 		</menu>
 	</extension>
-
+	<extension point="xbmc.service" library="service.py" />
 	<extension point="kodi.addon.metadata">
 		<summary lang="en">Play a movie or show trailer from the context menu in the library.</summary>
 		<description lang="en">Adds a context menu entry for movies or shows that have a trailer in the database. Choose windowed or fullscreen play in the settings.</description>
@@ -28,6 +36,7 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>Modded version to allow tvshow trailer playback</news>
+		<news>v0.1.0.3
+- Added Multi source select list via google api youtube search.</news>
 	</extension>
 </addon>
