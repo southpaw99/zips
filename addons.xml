@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="context.trailer.mod" name="Play Trailer Mod" version="1.0.4" provider-name="Venom">
+<addon id="context.trailer.mod" name="Play Trailer Mod" version="1.0.5" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="plugin.video.youtube" version="6.2.0"/>
@@ -11,7 +11,7 @@
 				<label>32000</label>
 				<visible>
 					String.IsEqual(Window(home).Property(context.trailer.autoplay),true) +
-					[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)] +
+					[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,episode)] +
 					!String.IsEmpty(ListItem.Trailer)
 				</visible>
 			</item>
@@ -19,7 +19,7 @@
 				<label>32001</label>
 				<visible>
 					String.IsEqual(Window(home).Property(context.trailer.selectplay),true) +
-					[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)]
+					[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,episode)]
 				</visible>
 			</item>
 		</menu>
@@ -38,8 +38,10 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>v1.0.4
-    Added missing youtube dependency.</news>
+		<news>
+v0.1.0.5
+Added episodes to trailer playback ability. Search based on "tvshowtitle"
+		</news>
 	</extension>
 </addon>
 
