@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.venom" version="3.7.0" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
+<addon id="plugin.video.venom" version="3.7.1" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.requests" version="2.19.1" />
@@ -34,16 +34,9 @@
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v3.7.0 - May 29, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Increased Find Similar list to 20 items vs. 10.[/I]
-[COLOR yellow]--[/COLOR][I] Removed tagline for shows.[/I]
-[COLOR yellow]--[/COLOR][I] Added missing clearlogo and clearart at season level.[/I]
-[COLOR yellow]--[/COLOR][I] Unwatched count now only added to multi episode
-    lists like Progress and Calendar.[/I]
-[COLOR yellow]--[/COLOR][I] Added .setProperty(tmdb_id) for episodes and
-    .setProperty(tvshow.tmdb_id) for shows for TMDBHelper
-    support of lookup.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed bookmark issue mismatch in databse.[/I]
+[B][COLOR red]Update - v3.7.1 - May 29, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Set tmdb to str() in tmdb module. This broke setting
+    the new .setProperty('tmdb_id', tmdb). Can not be an int().[/I]
 		</news>
 	</extension>
 </addon>
