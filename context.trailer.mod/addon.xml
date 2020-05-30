@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="context.trailer.mod" name="Play Trailer Mod" version="1.0.5" provider-name="Venom">
+<addon id="context.trailer.mod" name="Play Trailer Mod" version="1.0.6" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.module.requests" version="2.19.1" />
 		<import addon="plugin.video.youtube" version="6.2.0"/>
 	</requires>
 	<extension point="kodi.context.item">
@@ -38,8 +39,8 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-v0.1.0.5
-Added episodes to trailer playback ability. Search based on "tvshowtitle"
+v0.1.0.6
+Added notication upon youtube quota exceeded error.
 		</news>
 	</extension>
 </addon>
