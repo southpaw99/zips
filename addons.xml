@@ -96,6 +96,11 @@ Added notication upon youtube quota exceeded error.
 					String.StartsWith(ListItem.FolderPath,plugin://plugin.video.venom/?action=play) +
 					String.IsEqual(ListItem.Property(isVenom_widget),true) +
 					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]
+
+<!-- Future for Library CM to Rescrape -->
+<!-- 					!String.IsEmpty(Window(home).Property(context.venom.rescrape)) +
+					[String.Contains(ListItem.Path,plugin.video.venom) + String.IsEqual(ListItem.FileExtension,strm) | String.StartsWith(ListItem.FolderPath,plugin://plugin.video.venom/?action=play)] +
+					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)] -->
 				</visible>
 			</item>
 			<item library="playFromHere.py">
@@ -181,7 +186,7 @@ Added notication upon youtube quota exceeded error.
 	</extension>
 </addon>
 
-<addon id="plugin.video.venom" version="3.7.4" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
+<addon id="plugin.video.venom" version="4.0" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.requests" version="2.19.1" />
@@ -299,12 +304,6 @@ Added notication upon youtube quota exceeded error.
 		</dir>
 
 		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/drinfernoo/plugin.program.autowidget/repo/zips/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/drinfernoo/plugin.program.autowidget/repo/zips/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/drinfernoo/plugin.program.autowidget/repo/zips/</datadir>
-		</dir>
-
-		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/skyfsza/repository.auramod/master/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/skyfsza/repository.auramod/master/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/skyfsza/repository.auramod/master/</datadir>
@@ -328,11 +327,11 @@ Added notication upon youtube quota exceeded error.
 			<datadir zip="true">https://raw.githubusercontent.com/a4k-openproject/repository.openmeta/master/zips/</datadir>
 		</dir>
 
-<!-- 		<dir>
+		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/</datadir>
-		</dir> -->
+		</dir>
 
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
