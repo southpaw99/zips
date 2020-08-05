@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.venom" version="4.0.4" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
+<addon id="plugin.video.venom" version="4.0.5" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.requests" version="2.19.1" />
@@ -34,11 +34,12 @@
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v4.0.4 - Aug. 02, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Sorry folks completely forgot about .strm library file
-    playback with the new pack file work, they were badly
-    broken.  This is now fixed including resolving of pack
-    files from library as well.[/I]
+[B][COLOR red]Update - v4.0.5 - Aug. 05, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Added 2 new string format checks for resolving
+    pack files due to some rare and rather odd internal
+    episode naming conventions used.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed a torrent caching expiry issue preventing a fresh
+    scrape under some situations.[/I]
 		</news>
 	</extension>
 </addon>
