@@ -46,7 +46,7 @@ Added notication upon youtube quota exceeded error.
 	</extension>
 </addon>
 
-<addon id="context.venom" version="1.0.5" name="Venom - Global Context Menu Items" provider-name="Venom">
+<addon id="context.venom" version="1.0.7" name="Venom - Global Context Menu Items" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.23.0" />
 	</requires>
@@ -178,10 +178,8 @@ Added notication upon youtube quota exceeded error.
 			<fanart>fanart.png</fanart>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.0.5 - May 29, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Added service for settings changes.  This now helps items
-    to change and be more responsive than before.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed issue where wrong year wascausing bookmark issues.[/I]
+[B][COLOR red]Update - v1.0.7 - Sept 04, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Fix typo in version bump and updated changelog[/I]
 		</news>
 	</extension>
 </addon>
