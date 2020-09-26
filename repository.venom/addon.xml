@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="repository.venom" name="[COLOR red]Venom[/COLOR] Repository" version="1.11" provider-name="Venom">
+<addon id="repository.venom" name="[COLOR red]Venom[/COLOR] Repository" version="1.12" provider-name="Venom">
 	<extension point="xbmc.addon.repository" name="Venom Repo">
 
 		<dir>
@@ -75,9 +75,8 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.9 - Aug 15, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Added AutoWidgets.[/I]
-[COLOR yellow]--[/COLOR][I] Added a4kSubtitles.[/I]
+[B][COLOR red]Update - v1.12 – Sept. 26, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] fix incorrect version bump.[/I]
 		</news>
 	</extension>
 </addon>
