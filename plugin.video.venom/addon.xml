@@ -1,4 +1,4 @@
-<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.2.1">
+<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.2.2">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.myaccounts" version="1.0.0" />
@@ -33,30 +33,13 @@
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v4.2.1 – Sept. 26, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] fix incorrect version bump.[/I]
-
-[B][COLOR red]Update - v4.2.0 – Sept. 26, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Free hoster and foreign scraper support has been removed
-    due to limited time to maintain.  Premium hosters supported
-    by AD, PM, and RD is still supported.[/I]
-[COLOR yellow]--[/COLOR][I] New scraper pack called "Fenom Scrapers" per above
-    changes and OpenScrapers is no longer to be maintained.[/I]
-[COLOR yellow]--[/COLOR][I] Venom now integrates with a new addon to access your
-    account information called "My Accounts".  My Accounts
-    allows any addon to access the authorized info so if
-    adopted by other developers it would eliminate the
-    need to authorize in every addon you use.
-    This does however require a new initial setup.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed missing download option for premium hosters.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed library imports where disabled notifications would
-    prematurely terminate the import process.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed invalid characters displayed in source select.[/I]
-[COLOR yellow]--[/COLOR][I] Source select has been re-written for the removal of
-    "Free" hoster streams.  A new layout is now
-    in place and includes an elapsed timer count.[/I]
-[COLOR yellow]--[/COLOR][I] New bookmark options to use exist local bookmarks
-    or Trakt scrobble.[/I]
+[B][COLOR red]Update - v4.2.2 – Sept. 29, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Fixed seven instances of missing ID's in settings.xml.  This
+    just caused a constant cleaning of these 7 items that were
+    never called or referenced.  This now avoids that notice.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed scraper progress dialog displaying to many scraper
+    names for skins with small progress dialogs.  Names will not
+    display until the remaining count reaches 6.[/I]
 		</news>
 	</extension>
 </addon>
