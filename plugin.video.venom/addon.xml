@@ -1,4 +1,4 @@
-<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.2.9">
+<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.3.0">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="context.venom" version="1.0.0" />
@@ -33,16 +33,11 @@
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v4.2.9 - Nov. 29, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed for some skins info dialog not closing when playback
-    initiated from this info dialog.[/I]
-[COLOR yellow]--[/COLOR][I] Changed Venom scrape, resolve, and removed source link
-    dialog heading to now display the item being scraped vs.
-    the addon name as heading.[/I]
-[COLOR yellow]--[/COLOR][I] Added Trakt Watched status service sync.[/I]
-[COLOR yellow]--[/COLOR][I] Added setting to the "Source Options" to enable/disable the
-    IMDb year check before scraping.  See Help below setting
-    for more info[/I]
+[B][COLOR red]Update - v4.3.0 - Dec. 5, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Fixed resolve issue with pack files when playing episode10
+    would replay episode9 if quality was 1080p.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed failed library playback issue if Venom's metacache was
+    cleared after a title was added to the library.[/I]
 		</news>
 	</extension>
 </addon>
