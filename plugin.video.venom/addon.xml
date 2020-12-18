@@ -1,4 +1,4 @@
-<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.3.0">
+<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.3.1">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="context.venom" version="1.0.0" />
@@ -33,11 +33,30 @@
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v4.3.0 - Dec. 5, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed resolve issue with pack files when playing episode10
-    would replay episode9 if quality was 1080p.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed failed library playback issue if Venom's metacache was
-    cleared after a title was added to the library.[/I]
+[B][COLOR red]Update - v4.3.1 - Dec. 18, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Fixed Anime Movies and TV Shows menu not advancing to
+    next page.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed RD caching of uncached torrents, stalled at file select.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed RD "My Downloads" not loading results.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed Trakt sync for "Scrobble Reset" items not sync'd to
+    other devices.[/I]
+[COLOR yellow]--[/COLOR][I] Added ability to auto start playback upon completion of
+    caching uncached torrent.[/I]
+[COLOR yellow]--[/COLOR][I] Added new "yes-no" dialog when cancelling caching of
+    uncached torrent.  Now user has the option to
+    close progress dialog but allow premium service
+    to continue it's download, or close and cancel both.[/I]
+[COLOR yellow]--[/COLOR][I] Request to add debrid account expiry notification.  This
+    has now been added to the "My Accounts" addon.[/I]
+[COLOR yellow]--[/COLOR][I] Removed "Multi-Line Source Select" setting.  This is now
+    the hard coded default.[/I]
+[COLOR yellow]--[/COLOR][I] Uncached torrents now has it's own color setting choice
+    under "Torrent Settings".[/I]
+[COLOR yellow]--[/COLOR][I] Due to settings changes the entire "Source Options"
+    category has be rearranged.  A new heading has been
+    added to better group settings based on the flow of
+    scraping process and source selection.  It is advisable
+    to review and save settings.[/I]
 		</news>
 	</extension>
 </addon>
