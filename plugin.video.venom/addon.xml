@@ -1,4 +1,4 @@
-<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.3.2">
+<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.3.3">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="context.venom" version="1.0.0" />
@@ -33,22 +33,13 @@
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v4.3.2 - Dec. 30, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed Library Update failure issue due to closed database.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed Global Context Menu option "Clear Bookmark" call.[/I]
-[COLOR yellow]--[/COLOR][I] Trakt Manager will no longer show "Scrobble Reset" if user
-    settings are configured for "Local Bookmarks".[/I]
-[COLOR yellow]--[/COLOR][I] Home screen widget refresh now more consistent than
-    before.[/I]
-[COLOR yellow]--[/COLOR][I] Removed setting for Source Select to show "Extra Info".
-    This is now the hard coded default.[/I]
-[COLOR yellow]--[/COLOR][I] Source Select has been re-written to now show secondary
-    line "file_name", similar to Torrent files.  It now follows
-    secondary line type like torrents.[/I]
-[COLOR yellow]--[/COLOR][I] Source Select secondary line options now better grouped
-    in Settings.[/I]
-[COLOR yellow]--[/COLOR][I] AD, PM, and RD cache check of torrent requests is now
-    threaded for performance.[/I]
+[B][COLOR red]Update - v4.3.3 - Jan. 01, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Fixed issue where torrents turned off produced no sources
+    with premium hosters only enabled.[/I]
+[COLOR yellow]--[/COLOR][I] Reworked file size sorting. Provider sorting has been removed.
+    Now sorting is base on group sort option and
+    (quality/size) priority sorting.[/I]
+[COLOR yellow]--[/COLOR][I] See "Source Options"-"Soures Select" for above changes.[/I]
 		</news>
 	</extension>
 </addon>
