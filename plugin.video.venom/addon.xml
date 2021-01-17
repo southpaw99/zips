@@ -1,4 +1,4 @@
-<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.3.4">
+<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.3.5">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="context.venom" version="1.0.0" />
@@ -33,12 +33,11 @@
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v4.3.4 - Jan. 04, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Removed setting option "Remove Captcha".  Since switching
-    to debrid only support this option is no longer needed.[/I]
-[COLOR yellow]--[/COLOR][I] Allot of cleanup has been done to the Sources module
-    for removed options. Scraping and source select is now faster.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed Library Update Service exit typo.[/I]
+[B][COLOR red]Update - v4.3.5 - Jan. 17, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Fixed random playback failures of EasyNews links.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed issue where some epsiodes where incorectly
+    indicated as "unaired".[/I]
+[COLOR yellow]--[/COLOR][I] Fixed resolving of m2ts files.[/I]
 		</news>
 	</extension>
 </addon>
