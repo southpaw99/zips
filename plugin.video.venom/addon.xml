@@ -1,4 +1,4 @@
-<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.3.5">
+<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.3.6">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="context.venom" version="1.0.0" />
@@ -33,11 +33,12 @@
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v4.3.5 - Jan. 17, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed random playback failures of EasyNews links.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed issue where some epsiodes where incorectly
-    indicated as "unaired".[/I]
-[COLOR yellow]--[/COLOR][I] Fixed resolving of m2ts files.[/I]
+[B][COLOR red]Update - v4.3.6 - Jan. 17, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Fixed scraper dialog failing under Background setting.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed issue where file size limit was accounted for before
+    a pack file size was re-calculated for actual episode
+    size inside the pack. This caused unnecessary removal
+    of items.[/I]
 		</news>
 	</extension>
 </addon>
