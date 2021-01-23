@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="context.venom" version="1.0.9" name="Venom - Global Context Menu Items" provider-name="Venom">
+<addon id="context.venom" version="1.1.0" name="Venom - Global Context Menu Items" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.23.0" />
 		<import addon="script.module.requests" version="2.19.1" />
@@ -111,31 +111,29 @@
 					String.StartsWith(ListItem.path,plugin://plugin.video.venom/) +
 					String.IsEqual(ListItem.Property(isVenom_widget),true) +
 					String.IsEqual(ListItem.dbtype,episode)
-<!-- 					[String.IsEqual(ListItem.dbtype,episode) | !String.IsEmpty(ListItem.Property(multi_episodes))] -->
 				</visible>
 			</item>
 		</menu>
-</extension>
+	</extension>
 	<extension point="xbmc.service" library="service.py" />
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Venom - This Addon is currently in beta. Please be aware there may be bugs present</summary>
-		<description lang="en">Adds Global Contextual Menu Items for Venom menu items throughout Kodi
-		</description>
+		<description lang="en">Adds Global Contextual Menu Items for Venom menu items throughout Kodi</description>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
 		<forum></forum>
-		<website></website>
-		<source></source>
+		<website>https://github.com/123Venom/context.venom</website>
+		<source>https://github.com/123Venom/context.venom</source>
 		<disclaimer lang="en"></disclaimer>
 		<assets>
 			<icon>icon.png</icon>
-			<fanart>fanart.png</fanart>
+			<fanart>fanart.jpg</fanart>
+			<screenshot></screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.0.9 - Oct. 05, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed Trakt Manager not opening.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed Context Settings not opening.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed service update check.[/I]
+[B][COLOR red]Update - v1.1.0 - Oct. 05, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Service module cleanup.[/I]
+[COLOR yellow]--[/COLOR][I] Changed to new fanart.[/I]
 		</news>
 	</extension>
 </addon>

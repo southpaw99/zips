@@ -1,4 +1,4 @@
-<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.3.6">
+<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.3.7">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="context.venom" version="1.0.0" />
@@ -33,12 +33,19 @@
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v4.3.6 - Jan. 17, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed scraper dialog failing under Background setting.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed issue where file size limit was accounted for before
-    a pack file size was re-calculated for actual episode
-    size inside the pack. This caused unnecessary removal
-    of items.[/I]
+[B][COLOR red]Update - v4.3.7 - Jan. 23, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Changed scraper timeout to default 60secs. Should help
+    resolve issue with slower devices returning
+    "no sources".[/I]
+[COLOR yellow]--[/COLOR][I] Venom logging now has new option "log Level". You can
+    now set this for "Normal" or "Debug(Extra Info)".  Normal
+    will only log code errors while Debug will log additional
+    Info I may require to trace bugs.[/I]
+[COLOR yellow]--[/COLOR][I] Background progress dialog was hidden under some
+    configurations, this is now fixed.[/I]
+[COLOR yellow]--[/COLOR][I] VERY important you read the "News and Info!!" of possible
+    coming changes for end of March that will effect many
+    exo fork users.[/I]
 		</news>
 	</extension>
 </addon>

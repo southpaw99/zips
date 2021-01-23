@@ -38,6 +38,7 @@
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
+			<screenshot></screenshot>
 		</assets>
 		<news>
 v0.1.0.6
@@ -46,7 +47,7 @@ Added notication upon youtube quota exceeded error.
 	</extension>
 </addon>
 
-<addon id="context.venom" version="1.0.9" name="Venom - Global Context Menu Items" provider-name="Venom">
+<addon id="context.venom" version="1.1.0" name="Venom - Global Context Menu Items" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.23.0" />
 		<import addon="script.module.requests" version="2.19.1" />
@@ -87,7 +88,6 @@ Added notication upon youtube quota exceeded error.
 					String.IsEqual(ListItem.Property(isVenom_widget),true) +
 <!-- 					!String.IsEqual(ListItem.Property(resumetime),0) + -->
 					!String.IsEqual(ListItem.Property(venom_resumetime),0) +
-<!-- 					String.IsEqual(ListItem.Property(traktScrobbleEnabled),true) + -->
 					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]
 				</visible>
 			</item>
@@ -159,36 +159,34 @@ Added notication upon youtube quota exceeded error.
 					String.StartsWith(ListItem.path,plugin://plugin.video.venom/) +
 					String.IsEqual(ListItem.Property(isVenom_widget),true) +
 					String.IsEqual(ListItem.dbtype,episode)
-<!-- 					[String.IsEqual(ListItem.dbtype,episode) | !String.IsEmpty(ListItem.Property(multi_episodes))] -->
 				</visible>
 			</item>
 		</menu>
-</extension>
+	</extension>
 	<extension point="xbmc.service" library="service.py" />
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Venom - This Addon is currently in beta. Please be aware there may be bugs present</summary>
-		<description lang="en">Adds Global Contextual Menu Items for Venom menu items throughout Kodi
-		</description>
+		<description lang="en">Adds Global Contextual Menu Items for Venom menu items throughout Kodi</description>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
 		<forum></forum>
-		<website></website>
-		<source></source>
+		<website>https://github.com/123Venom/context.venom</website>
+		<source>https://github.com/123Venom/context.venom</source>
 		<disclaimer lang="en"></disclaimer>
 		<assets>
 			<icon>icon.png</icon>
-			<fanart>fanart.png</fanart>
+			<fanart>fanart.jpg</fanart>
+			<screenshot></screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.0.9 - Oct. 05, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed Trakt Manager not opening.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed Context Settings not opening.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed service update check.[/I]
+[B][COLOR red]Update - v1.1.0 - Oct. 05, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Service module cleanup.[/I]
+[COLOR yellow]--[/COLOR][I] Changed to new fanart.[/I]
 		</news>
 	</extension>
 </addon>
 
-<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.3.6">
+<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.3.7">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="context.venom" version="1.0.0" />
@@ -223,75 +221,25 @@ Added notication upon youtube quota exceeded error.
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v4.3.6 - Jan. 17, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed scraper dialog failing under Background setting.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed issue where file size limit was accounted for before
-    a pack file size was re-calculated for actual episode
-    size inside the pack. This caused unnecessary removal
-    of items.[/I]
+[B][COLOR red]Update - v4.3.7 - Jan. 23, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Changed scraper timeout to default 60secs. Should help
+    resolve issue with slower devices returning
+    "no sources".[/I]
+[COLOR yellow]--[/COLOR][I] Venom logging now has new option "log Level". You can
+    now set this for "Normal" or "Debug(Extra Info)".  Normal
+    will only log code errors while Debug will log additional
+    Info I may require to trace bugs.[/I]
+[COLOR yellow]--[/COLOR][I] Background progress dialog was hidden under some
+    configurations, this is now fixed.[/I]
+[COLOR yellow]--[/COLOR][I] VERY important you read the "News and Info!!" of possible
+    coming changes for end of March that will effect many
+    exo fork users.[/I]
 		</news>
 	</extension>
 </addon>
 
-<addon id="repository.aeon.nox.silvo" name="Aeon Nox: SiLVO Repository" version="1.0.5" provider-name="SiLVO">
-	<requires>
-		<import addon="xbmc.addon" version="12.0.0"/>
-	</requires>
-	<extension point="xbmc.addon.repository" name="Aeon Nox: SiLVO Repo">
-		<dir minversion="15.0.0">
-			<info compressed="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/isengard/addons.xml</info>
-			<checksum>https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/isengard/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/isengard</datadir>
-		</dir>
-		<dir minversion="16.0.0">
-			<info compressed="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/jarvis/addons.xml</info>
-			<checksum>https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/jarvis/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/jarvis</datadir>
-		</dir>
-		<dir minversion="17.0.0">
-			<info compressed="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/krypton/addons.xml</info>
-			<checksum>https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/krypton/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/krypton</datadir>
-		</dir>
-		<dir minversion="17.9.0">
-			<info compressed="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/leia/addons.xml</info>
-			<checksum>https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/leia/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/leia</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>My version of Aeon Nox 5</summary>
-		<description>Main Repository for Aeon Nox: SiLVO</description>
-		<platform>all</platform>
-		<news>[I]v1.0.5[/I][CR]- Leia support</news>
-	</extension>
-</addon>
-
-<addon id="repository.gaia" version="5.0.0" name="Gaia Repository" provider-name="Gaia">
-	<extension point="xbmc.addon.repository" name="Gaia Repository">
-		<dir>
-			<info compressed="false">https://github.com/gaiaorigin/gaiaorigin/raw/master/common/addons.xml?v=5.0.0</info>
-			<checksum>https://github.com/gaiaorigin/gaiaorigin/raw/master/common/addons.xml.md5?v=5.0.0</checksum>
-			<datadir zip="true">https://github.com/gaiaorigin/gaiaorigin/raw/master/common/</datadir>
-		</dir>
-		<info compressed="false">https://github.com/gaiaorigin/gaiaorigin/raw/master/addons.xml?v=5.0.0</info>
-		<checksum>https://github.com/gaiaorigin/gaiaorigin/raw/master/addons.xml.md5?v=5.0.0</checksum>
-		<datadir zip="true">https://github.com/gaiaorigin/gaiaorigin/raw/master/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Gaia Main Repository</summary>
-		<description lang="en">The Gaia repository for the addon, resources, extensions, and external addons. Any of the Gaia mirror repositories can be used for installation and updates.</description>
-		<disclaimer lang="en">Gaia and its developers are not in any way affiliated with Kodi, Premiumize, OffCloud, RealDebrid, EasyNews, Orion, or any of the sites and providers used in the addon.<br/>Gaia is and always will be free and open-source. None of its code and resources may be sold or redistributed for any commercial purposes.<br/>Gaia and its developers do not host, create, or distribute any of the content displayed in the addon, it simply searches public websites.</disclaimer>
-		<platform>all</platform>
-		<license>GPL 3.0</license>
-		<website>https://gaiakodi.com</website>
-		<forum>https://gaiakodi.com/?support</forum>
-	</extension>
-</addon>
-
-<addon id="repository.venom" name="[COLOR red]Venom[/COLOR] Repository" version="1.12" provider-name="Venom">
+<addon id="repository.venom" name="[COLOR red]Venom[/COLOR] Repository" version="1.13" provider-name="Venom">
 	<extension point="xbmc.addon.repository" name="Venom Repo">
-
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/123Venom/zips/master/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/123Venom/zips/master/addons.xml.md5</checksum>
@@ -322,10 +270,21 @@ Added notication upon youtube quota exceeded error.
 			<datadir zip="true">https://raw.githubusercontent.com/skyfsza/repository.auramod/master/</datadir>
 		</dir>
 
+		<dir minversion="18.0" maxversion="18.9.0">
+			<info compressed="false">https://raw.githubusercontent.com/nixgates/nixgates/master/packages/leia/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/nixgates/nixgates/master/packages/leia/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/nixgates/nixgates/master/packages/leia/</datadir>
+		</dir>
+		<dir minversion="18.9.0">
+			<info compressed="false">https://raw.githubusercontent.com/nixgates/nixgates/master/packages/matrix/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/nixgates/nixgates/master/packages/matrix/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/nixgates/nixgates/master/packages/matrix/</datadir>
+		</dir>
+
 		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/nixgates/nixgates/master/packages/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/nixgates/nixgates/master/packages/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/nixgates/nixgates/master/packages</datadir>
+			<info compressed="false">https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/zip</datadir>
 		</dir>
 
 		<dir>
@@ -353,7 +312,13 @@ Added notication upon youtube quota exceeded error.
 			<datadir zip="true">https://raw.githubusercontent.com/drinfernoo/plugin.program.autowidget/repo/zips/</datadir>
 		</dir>
 
+		<dir minversion="17.9.0">
+			<info compressed="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/leia/addons.xml</info>
+			<checksum>https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/leia/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/leia</datadir>
+		</dir>
 	</extension>
+
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">[B][COLOR red]Venom[/COLOR][/B] - We do not host any of the contents streamed</summary>
 		<description lang="en">[B][COLOR red]Venom[/COLOR][/B] - This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.The author does not host any of the content in this addon and takes no responsibility for content found.</description>
@@ -363,10 +328,17 @@ Added notication upon youtube quota exceeded error.
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
+			<screenshot></screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.12 – Sept. 26, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] fix incorrect version bump.[/I]
+[B][COLOR red]Update - v1.13 - Jan. 23, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Added tikipeter repository for Fen.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed nixgate repo for changes to
+    version numbers.[/I]
+[COLOR yellow]--[/COLOR][I] Removed Gaia repo, sorry no longer
+    used here nor has been updated in awhile.[/I]
+[COLOR yellow]--[/COLOR][I] Aeon Nox Silvo repo removed and will
+    now only contain leia version.[/I]
 		</news>
 	</extension>
 </addon>
