@@ -238,7 +238,24 @@ Added notication upon youtube quota exceeded error.
 	</extension>
 </addon>
 
-<addon id="repository.venom" name="[COLOR red]Venom[/COLOR] Repository" version="1.13" provider-name="Venom">
+<addon id="repository.a4kstreaming"
+       name="a4kStreaming Repository"
+       version="1.0.0"
+       provider-name="Unknown">
+    <extension point="xbmc.addon.repository">
+        <info>https://raw.githubusercontent.com/newt-sc/a4kStreaming/master/packages/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/newt-sc/a4kStreaming/master/packages/addons.xml.crc</checksum>
+        <datadir>https://github.com/newt-sc/a4kStreaming/archive</datadir>
+        <artdir>https://github.com/newt-sc/a4kStreaming/releases/download/v0.1.0</artdir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>a4kStreaming</summary>
+        <description>a4kStreaming Repository</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="repository.venom" name="[COLOR red]Venom[/COLOR] Repository" version="1.14" provider-name="Venom">
 	<extension point="xbmc.addon.repository" name="Venom Repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/123Venom/zips/master/addons.xml</info>
@@ -288,12 +305,6 @@ Added notication upon youtube quota exceeded error.
 		</dir>
 
 		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/a4k-openproject/repository.openmeta/master/zips/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/a4k-openproject/repository.openmeta/master/zips/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/a4k-openproject/repository.openmeta/master/zips/</datadir>
-		</dir>
-
-		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/</datadir>
@@ -331,14 +342,10 @@ Added notication upon youtube quota exceeded error.
 			<screenshot></screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.13 - Jan. 23, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Added tikipeter repository for Fen.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed nixgate repo for changes to
-    version numbers.[/I]
-[COLOR yellow]--[/COLOR][I] Removed Gaia repo, sorry no longer
-    used here nor has been updated in awhile.[/I]
-[COLOR yellow]--[/COLOR][I] Aeon Nox Silvo repo removed and will
-    now only contain leia version.[/I]
+[B][COLOR red]Update - v1.14 - Jan. 26, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Removed OpenMeta repository as it's been removed
+    from a4k-openproject.[/I]
+[COLOR yellow]--[/COLOR][I] Added a4kstreaming repository.[/I]
 		</news>
 	</extension>
 </addon>
