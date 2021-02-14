@@ -1,4 +1,4 @@
-<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.3.7">
+<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.3.8">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="context.venom" version="1.0.0" />
@@ -33,19 +33,24 @@
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v4.3.7 - Jan. 23, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Changed scraper timeout to default 60secs. Should help
-    resolve issue with slower devices returning
-    "no sources".[/I]
-[COLOR yellow]--[/COLOR][I] Venom logging now has new option "log Level". You can
-    now set this for "Normal" or "Debug(Extra Info)".  Normal
-    will only log code errors while Debug will log additional
-    Info I may require to trace bugs.[/I]
-[COLOR yellow]--[/COLOR][I] Background progress dialog was hidden under some
-    configurations, this is now fixed.[/I]
-[COLOR yellow]--[/COLOR][I] VERY important you read the "News and Info!!" of possible
-    coming changes for end of March that will effect many
-    exo fork users.[/I]
+[B][COLOR red]Update - v4.3.8 - Feb. 14, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Fixed issue with RD cache check where scrapers may return
+    invalid magnets less than 40 characters in hash length.
+    RD terminates the response upon receiving such an
+    invalid magnet.[/I]
+[COLOR yellow]--[/COLOR][I] Added new "Additional Link Info" to context menu when
+    viewing source select list.[/I]
+[COLOR yellow]--[/COLOR][I] Source Select has been changed to now present user
+    with a YesNo dialog option to view the uncached torrents
+    if no cached torrents were returned.  This now makes it
+    much easier to cache items yourself via context menu.[/I]
+[COLOR yellow]--[/COLOR][I] The Torrent Settings category has been removed.
+    There is no longer an option for AD, PM, and RD to
+    enable or disable cache checking. There is now one
+    setting that applies to all 3 if enabled.  The new setting
+    was moved to "Source Options" category and is found
+    under "Sources Filtering Options".  There is also a "HELP"
+    link for additional info there as well.[/I]
 		</news>
 	</extension>
 </addon>
