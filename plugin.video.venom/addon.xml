@@ -1,4 +1,4 @@
-<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.3.9">
+<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.4.0">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="context.venom" version="1.0.0" />
@@ -33,14 +33,11 @@
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v4.3.9 - Feb. 17, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Added BASE32 to HEX conversion for RD cache checking
-    of magnets with BASE32 encoded hash. AD and PM do
-    this conversion.[/I]
-[COLOR yellow]--[/COLOR][I] With the new TORRENTTM scraper added to FenomScrapers
-    please clear provider cache.  The cache holds the list of
-    pack capable scrapers and requires a fresh fetch of the
-    updated list.[/I]
+[B][COLOR red]Update - v4.4.0 - Feb. 18, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Fixed renumbering of source select list for direct links when
+    "remove uncached torrents" setting is used. Direct links
+    are from EasyNews, Filepursuit, Furk, GDrive, Library,
+    and Ororo.[/I]
 		</news>
 	</extension>
 </addon>
