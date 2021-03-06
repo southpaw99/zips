@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="context.trailer.mod" name="Play Trailer Mod" version="1.0.6" provider-name="Venom">
+<addon id="context.trailer.mod" name="Play Trailer Mod" version="1.0.7" provider-name="Venom">
 	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.requests" version="2.19.1" />
-		<import addon="plugin.video.youtube" version="6.2.0"/>
+		<import addon="plugin.video.youtube" version="6.2.0" />
 	</requires>
 	<extension point="kodi.context.item">
 		<menu id="kodi.core.main">
@@ -37,10 +36,11 @@
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
+			<screenshot></screenshot>
 		</assets>
 		<news>
-v0.1.0.6
-Added notication upon youtube quota exceeded error.
+v0.1.0.7
+- Matrix compatibility(py3) update.
 		</news>
 	</extension>
 </addon>

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="context.trailer.mod" name="Play Trailer Mod" version="1.0.6" provider-name="Venom">
+<addon id="context.trailer.mod" name="Play Trailer Mod" version="1.0.7" provider-name="Venom">
 	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.requests" version="2.19.1" />
-		<import addon="plugin.video.youtube" version="6.2.0"/>
+		<import addon="plugin.video.youtube" version="6.2.0" />
 	</requires>
 	<extension point="kodi.context.item">
 		<menu id="kodi.core.main">
@@ -41,15 +40,14 @@
 			<screenshot></screenshot>
 		</assets>
 		<news>
-v0.1.0.6
-Added notication upon youtube quota exceeded error.
+v0.1.0.7
+- Matrix compatibility(py3) update.
 		</news>
 	</extension>
 </addon>
 
-<addon id="context.venom" version="1.1.0" name="Venom - Global Context Menu Items" provider-name="Venom">
+<addon id="context.venom" version="1.1.1" name="Venom - Global Context Menu Items" provider-name="Venom">
 	<requires>
-		<import addon="xbmc.python" version="2.23.0" />
 		<import addon="script.module.requests" version="2.19.1" />
 	</requires>
 	<extension point="kodi.context.item">
@@ -179,22 +177,21 @@ Added notication upon youtube quota exceeded error.
 			<screenshot></screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.1.0 - Oct. 05, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Service module cleanup.[/I]
-[COLOR yellow]--[/COLOR][I] Changed to new fanart.[/I]
+[B][COLOR red]Update - v1.1.1 - March 06, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Matrix(py3) compatibility update.[/I]
 		</news>
 	</extension>
 </addon>
 
-<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.4.0">
+<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.4.1">
 	<requires>
-		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="context.venom" version="1.0.0" />
 		<import addon="script.module.myaccounts" version="1.0.0" />
 		<import addon="script.module.fenomscrapers" version="1.0.0" />
+		<import addon="script.module.six" version="1.11.0" />
 		<import addon="script.module.requests" version="2.19.1" />
 		<import addon="script.module.beautifulsoup4" version="4.5.3" />
-		<import addon="script.module.metahandler" version="2.9.0" />
+		<import addon="script.module.metahandler" version="5.0.0" />
 		<import addon="plugin.video.youtube" version="6.2.0" />
 		<import addon="script.module.addon.signals" version="0.0.3" />
 	</requires>
@@ -221,11 +218,11 @@ Added notication upon youtube quota exceeded error.
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v4.4.0 - Feb. 18, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed renumbering of source select list for direct links when
-    "remove uncached torrents" setting is used. Direct links
-    are from EasyNews, Filepursuit, Furk, GDrive, Library,
-    and Ororo.[/I]
+[B][COLOR red]Update - v4.4.1 - March 06, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Matrix(py3) compatibility update.[/I]
+[COLOR yellow]--[/COLOR][I] Added copy to clipboard feature.  This is accessible from the
+    context menu in source select list.  Now you can copy to
+    clipboar d url's, file names, and magnet hashes.[/I]
 		</news>
 	</extension>
 </addon>
@@ -358,13 +355,13 @@ Added notication upon youtube quota exceeded error.
 
 <addon id="script.module.metahandler"
      name="metahandler"
-     version="3.99.02"
+     version="5.0.0"
      provider-name="Eldorado">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.simplejson" version="3.3.0"/>
-    <import addon="script.module.addon.common" version="2.0.0"/>
-    <import addon="script.module.myconnpy" version="1.1.6"/>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.six" version="1.14.0+matrix.2"/>
+    <import addon="script.module.simplejson" version="3.17.0+matrix.2"/>
+    <import addon="script.module.myconnpy" version="8.0.18+matrix.1"/>
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.python.pluginsource" library="lib/default.py" />

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="context.venom" version="1.1.0" name="Venom - Global Context Menu Items" provider-name="Venom">
+<addon id="context.venom" version="1.1.1" name="Venom - Global Context Menu Items" provider-name="Venom">
 	<requires>
-		<import addon="xbmc.python" version="2.23.0" />
 		<import addon="script.module.requests" version="2.19.1" />
 	</requires>
 	<extension point="kodi.context.item">
@@ -131,9 +130,8 @@
 			<screenshot></screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.1.0 - Oct. 05, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Service module cleanup.[/I]
-[COLOR yellow]--[/COLOR][I] Changed to new fanart.[/I]
+[B][COLOR red]Update - v1.1.1 - March 06, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Matrix(py3) compatibility update.[/I]
 		</news>
 	</extension>
 </addon>
