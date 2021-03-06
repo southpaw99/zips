@@ -1,14 +1,14 @@
-<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.4.1">
+<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.4.2">
 	<requires>
-		<import addon="context.venom" version="1.0.0" />
-		<import addon="script.module.myaccounts" version="1.0.0" />
-		<import addon="script.module.fenomscrapers" version="1.0.0" />
-		<import addon="script.module.six" version="1.11.0" />
-		<import addon="script.module.requests" version="2.19.1" />
-		<import addon="script.module.beautifulsoup4" version="4.5.3" />
-		<import addon="script.module.metahandler" version="5.0.0" />
-		<import addon="plugin.video.youtube" version="6.2.0" />
-		<import addon="script.module.addon.signals" version="0.0.3" />
+		<import addon="context.venom" />
+		<import addon="script.module.myaccounts" />
+		<import addon="script.module.fenomscrapers" />
+		<import addon="script.module.six" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.beautifulsoup4" />
+		<import addon="script.module.metahandler" />
+		<import addon="plugin.video.youtube" />
+		<import addon="script.module.addon.signals" />
 	</requires>
 	<extension library="venom.py" point="xbmc.python.pluginsource">
 		<provides>video</provides>
@@ -33,7 +33,8 @@
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v4.4.1 - March 06, 2021[/COLOR][/B]
+[B][COLOR red]Update - v4.4.2 - March 06, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Fixed version dependecy issue.[/I]
 [COLOR yellow]--[/COLOR][I] Matrix(py3) compatibility update.[/I]
 [COLOR yellow]--[/COLOR][I] Added copy to clipboard feature.  This is accessible from the
     context menu in source select list.  Now you can copy to
