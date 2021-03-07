@@ -188,7 +188,6 @@ v0.1.0.7
 		<import addon="context.venom" />
 		<import addon="script.module.myaccounts" />
 		<import addon="script.module.fenomscrapers" />
-		<import addon="script.module.six" />
 		<import addon="script.module.requests" />
 		<import addon="script.module.beautifulsoup4" />
 		<import addon="script.module.metahandler" />
@@ -245,7 +244,7 @@ v0.1.0.7
     </extension>
 </addon>
 
-<addon id="repository.venom" name="[COLOR red]Venom[/COLOR] Repository" version="1.15" provider-name="Venom">
+<addon id="repository.venom" name="[COLOR red]Venom[/COLOR] Repository" version="1.16" provider-name="Venom">
 	<extension point="xbmc.addon.repository" name="Venom Repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/123Venom/zips/master/addons.xml</info>
@@ -343,10 +342,11 @@ v0.1.0.7
 			<screenshot></screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.15 - March 06, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Made custom repo of Eldorado's Metahandler to solve
-    install issues between Kodi 18(Leia) and 19(Matrix).
-    Metahandler v3.99.02 is for Leia and v5.0 is for Matrix.[/I]
+[B][COLOR red]Update - v1.16 - March 07, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Fixed gaff with "script.module.metahandler" still being in
+    Venom's repo.  This caused dependency issue under Leia.
+    Now the new metahandler repo will be used and proper
+    dependent version installed.[/I]
 		</news>
 	</extension>
 </addon>
@@ -363,32 +363,6 @@ v0.1.0.7
 		<license>GNU GENERAL PUBLIC LICENSE Version 2.1, February 1999</license>
 		<source>https://github.com/ruuk/script.module.addon.signals</source>
 	</extension>
-</addon>
-
-<addon id="script.module.metahandler"
-     name="metahandler"
-     version="5.0.0"
-     provider-name="Eldorado">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0" />
-    <import addon="script.module.six" version="1.14.0+matrix.2"/>
-    <import addon="script.module.simplejson" version="3.17.0+matrix.2"/>
-    <import addon="script.module.myconnpy" version="8.0.18+matrix.1"/>
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.python.pluginsource" library="lib/default.py" />
-  <extension point="xbmc.addon.metadata">
-      <platform>all</platform>
-      <summary lang="en">Downloads Artwork for TV shows, Movies and Music videos for addons and stores them in a local SQLITE database</summary>
-      <description lang="en">Queries, stores, and returns metadata for TV shows, Movies and Musicvideos. [CR]Sources:[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]www.imdb.com[CR]www.omdbapi.com[CR]This product uses the TMDb API but is not endorsed or certified by TMDb.</description>
-      <disclaimer lang="en"></disclaimer>
-      <language></language>
-      <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-      <forum></forum>
-      <website></website>
-      <email></email>
-      <source></source>
-  </extension>
 </addon>
 
 <addon id="service.upnext" name="Up Next" provider-name="im85288" version="1.0.1">

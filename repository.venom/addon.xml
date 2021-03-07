@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.venom" name="[COLOR red]Venom[/COLOR] Repository" version="1.15" provider-name="Venom">
+<addon id="repository.venom" name="[COLOR red]Venom[/COLOR] Repository" version="1.16" provider-name="Venom">
 	<extension point="xbmc.addon.repository" name="Venom Repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/123Venom/zips/master/addons.xml</info>
@@ -97,10 +97,11 @@
 			<screenshot></screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.15 - March 06, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Made custom repo of Eldorado's Metahandler to solve
-    install issues between Kodi 18(Leia) and 19(Matrix).
-    Metahandler v3.99.02 is for Leia and v5.0 is for Matrix.[/I]
+[B][COLOR red]Update - v1.16 - March 07, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Fixed gaff with "script.module.metahandler" still being in
+    Venom's repo.  This caused dependency issue under Leia.
+    Now the new metahandler repo will be used and proper
+    dependent version installed.[/I]
 		</news>
 	</extension>
 </addon>
