@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="context.venom" version="1.1.1" name="Venom - Global Context Menu Items" provider-name="Venom">
+<addon id="context.venom" name="Venom - Global Context Menu Items" provider-name="Venom" version="1.1.2">
 	<requires>
 		<import addon="script.module.requests" version="2.19.1" />
 	</requires>
@@ -37,8 +37,7 @@
 					!String.IsEmpty(Window(home).Property(context.venom.clearBookmark)) +
 					String.StartsWith(ListItem.FolderPath,plugin://plugin.video.venom/?action=play) +
 					String.IsEqual(ListItem.Property(isVenom_widget),true) +
-<!-- 					!String.IsEqual(ListItem.Property(resumetime),0) + -->
-					!String.IsEqual(ListItem.Property(venom_resumetime),0) +
+					ListItem.IsResumable +
 					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]
 				</visible>
 			</item>
@@ -49,11 +48,10 @@
 					String.StartsWith(ListItem.FolderPath,plugin://plugin.video.venom/?action=play) +
 					String.IsEqual(ListItem.Property(isVenom_widget),true) +
 					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]
-
 <!-- Future for Library CM to Rescrape -->
-<!-- 					!String.IsEmpty(Window(home).Property(context.venom.rescrape)) +
-					[String.Contains(ListItem.Path,plugin.video.venom) + String.IsEqual(ListItem.FileExtension,strm) | String.StartsWith(ListItem.FolderPath,plugin://plugin.video.venom/?action=play)] +
-					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)] -->
+<!-- 					!String.IsEmpty(Window(home).Property(context.venom.rescrape)) + -->
+<!-- 					[String.Contains(ListItem.Path,plugin.video.venom) + String.IsEqual(ListItem.FileExtension,strm) | String.StartsWith(ListItem.FolderPath,plugin://plugin.video.venom/?action=play)] + -->
+<!-- 					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)] -->
 				</visible>
 			</item>
 			<item library="playFromHere.py">
@@ -130,8 +128,8 @@
 			<screenshot></screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.1.1 - March 06, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Matrix(py3) compatibility update.[/I]
+[B][COLOR red]Update - v1.1.2 - March 10, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Change method of determining bookmarks to use "ListItem.IsResumable".[/I]
 		</news>
 	</extension>
 </addon>

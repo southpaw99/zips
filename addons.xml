@@ -46,7 +46,7 @@ v0.1.0.7
 	</extension>
 </addon>
 
-<addon id="context.venom" version="1.1.1" name="Venom - Global Context Menu Items" provider-name="Venom">
+<addon id="context.venom" name="Venom - Global Context Menu Items" provider-name="Venom" version="1.1.2">
 	<requires>
 		<import addon="script.module.requests" version="2.19.1" />
 	</requires>
@@ -84,8 +84,7 @@ v0.1.0.7
 					!String.IsEmpty(Window(home).Property(context.venom.clearBookmark)) +
 					String.StartsWith(ListItem.FolderPath,plugin://plugin.video.venom/?action=play) +
 					String.IsEqual(ListItem.Property(isVenom_widget),true) +
-<!-- 					!String.IsEqual(ListItem.Property(resumetime),0) + -->
-					!String.IsEqual(ListItem.Property(venom_resumetime),0) +
+					ListItem.IsResumable +
 					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]
 				</visible>
 			</item>
@@ -96,11 +95,10 @@ v0.1.0.7
 					String.StartsWith(ListItem.FolderPath,plugin://plugin.video.venom/?action=play) +
 					String.IsEqual(ListItem.Property(isVenom_widget),true) +
 					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]
-
 <!-- Future for Library CM to Rescrape -->
-<!-- 					!String.IsEmpty(Window(home).Property(context.venom.rescrape)) +
-					[String.Contains(ListItem.Path,plugin.video.venom) + String.IsEqual(ListItem.FileExtension,strm) | String.StartsWith(ListItem.FolderPath,plugin://plugin.video.venom/?action=play)] +
-					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)] -->
+<!-- 					!String.IsEmpty(Window(home).Property(context.venom.rescrape)) + -->
+<!-- 					[String.Contains(ListItem.Path,plugin.video.venom) + String.IsEqual(ListItem.FileExtension,strm) | String.StartsWith(ListItem.FolderPath,plugin://plugin.video.venom/?action=play)] + -->
+<!-- 					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)] -->
 				</visible>
 			</item>
 			<item library="playFromHere.py">
@@ -177,22 +175,22 @@ v0.1.0.7
 			<screenshot></screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.1.1 - March 06, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Matrix(py3) compatibility update.[/I]
+[B][COLOR red]Update - v1.1.2 - March 10, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Change method of determining bookmarks to use "ListItem.IsResumable".[/I]
 		</news>
 	</extension>
 </addon>
 
-<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.4.2">
+<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.4.3">
 	<requires>
 		<import addon="context.venom" />
 		<import addon="script.module.myaccounts" />
 		<import addon="script.module.fenomscrapers" />
 		<import addon="script.module.requests" />
 		<import addon="script.module.beautifulsoup4" />
-		<import addon="script.module.metahandler" />
-		<import addon="plugin.video.youtube" />
-		<import addon="script.module.addon.signals" />
+		<import addon="script.module.metahandler" optional="true" />
+		<import addon="plugin.video.youtube" optional="true" />
+		<import addon="script.module.addon.signals" optional="true" />
 	</requires>
 	<extension library="venom.py" point="xbmc.python.pluginsource">
 		<provides>video</provides>
@@ -217,12 +215,9 @@ v0.1.0.7
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v4.4.2 - March 06, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed version dependecy issue.[/I]
-[COLOR yellow]--[/COLOR][I] Matrix(py3) compatibility update.[/I]
-[COLOR yellow]--[/COLOR][I] Added copy to clipboard feature.  This is accessible from the
-    context menu in source select list.  Now you can copy to
-    clipboar d url's, file names, and magnet hashes.[/I]
+[B][COLOR red]Update - v4.4.3 - March 10, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Fixed Downloader module, missed py3 cases for Kodi Matrix.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed Library Integration, missed py3 cases for Kodi Matrix.[/I]
 		</news>
 	</extension>
 </addon>
