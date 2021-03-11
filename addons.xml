@@ -181,7 +181,7 @@ v0.1.0.7
 	</extension>
 </addon>
 
-<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.4.3">
+<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.4.4">
 	<requires>
 		<import addon="context.venom" />
 		<import addon="script.module.myaccounts" />
@@ -198,7 +198,7 @@ v0.1.0.7
 	<extension library="service.py" point="xbmc.service" start="startup" />
 	<extension library="resources/lib/" point="xbmc.python.module" />
 	<extension point="xbmc.addon.metadata">
-		<reuselanguageinvoker>true</reuselanguageinvoker>
+		<reuselanguageinvoker>false</reuselanguageinvoker>
 		<summary lang="en">[B][COLOR red]Venom[/COLOR][/B] - We do not host any of the contents streamed</summary>
 		<description lang="en">[B][COLOR red]Venom[/COLOR][/B][CR] This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR]The author does not host any of the content in this addon and takes no responsibility for content found</description>
 		<platform>all</platform>
@@ -215,9 +215,15 @@ v0.1.0.7
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v4.4.3 - March 10, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed Downloader module, missed py3 cases for Kodi Matrix.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed Library Integration, missed py3 cases for Kodi Matrix.[/I]
+[B][COLOR red]Update - v4.4.4 - March 11, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Note TMDBHelper player files have been updated.  Be sure
+    to update via the TMDBHelper settings.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed TMDBHelper playback of library files(.strm) when
+    TMDBHelper is set to "Automatically play local files".[/I]
+[COLOR yellow]--[/COLOR][I] Few tweaks to some annoying folder and file names used for
+    library integration. Ex. "&" was replaced with an underscore,
+    now replaced with the word "and".  Apostrophes in names
+    were being replaces with a "."(dot), now just removed.[/I]
 		</news>
 	</extension>
 </addon>
@@ -239,23 +245,12 @@ v0.1.0.7
     </extension>
 </addon>
 
-<addon id="repository.venom" name="[COLOR red]Venom[/COLOR] Repository" version="1.16" provider-name="Venom">
+<addon id="repository.venom" name="[COLOR red]Venom[/COLOR] Repository" version="1.17" provider-name="Venom">
 	<extension point="xbmc.addon.repository" name="Venom Repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/123Venom/zips/master/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/123Venom/zips/master/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/123Venom/zips/master/</datadir>
-		</dir>
-
-		<dir minversion="18.0" maxversion="18.9.0">
-			<info compressed="false">https://raw.githubusercontent.com/123Venom/repository.metahandler/main/leia/zips/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/123Venom/repository.metahandler/main/leia/zips/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/123Venom/repository.metahandler/main/leia/zips/</datadir>
-		</dir>
-		<dir minversion="18.9.0">
-			<info compressed="false">https://raw.githubusercontent.com/123Venom/repository.metahandler/main/matrix/zips/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/123Venom/repository.metahandler/main/matrix/zips/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/123Venom/repository.metahandler/main/matrix/zips/</datadir>
 		</dir>
 
 		<dir>
@@ -270,6 +265,17 @@ v0.1.0.7
 			<datadir zip="true">https://raw.githubusercontent.com/mr-kodi/repository.fenomscrapers/master/zips/</datadir>
 		</dir>
 
+		<dir minversion="18.0" maxversion="18.9.0">
+			<info compressed="false">https://raw.githubusercontent.com/123Venom/repository.metahandler/main/leia/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/123Venom/repository.metahandler/main/leia/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/123Venom/repository.metahandler/main/leia/zips/</datadir>
+		</dir>
+		<dir minversion="18.9.0">
+			<info compressed="false">https://raw.githubusercontent.com/123Venom/repository.metahandler/main/matrix/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/123Venom/repository.metahandler/main/matrix/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/123Venom/repository.metahandler/main/matrix/zips/</datadir>
+		</dir>
+
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/drinfernoo/repository.openwizard/master/zips/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/drinfernoo/repository.openwizard/master/zips/addons.xml.md5</checksum>
@@ -277,6 +283,23 @@ v0.1.0.7
 		</dir>
 
 		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/drinfernoo/plugin.program.autowidget/repo/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/drinfernoo/plugin.program.autowidget/repo/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/drinfernoo/plugin.program.autowidget/repo/zips/</datadir>
+		</dir>
+
+		<dir minversion="18.0" maxversion="18.9.0">
+			<info compressed="false">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/leia/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/leia/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/leia/zips/</datadir>
+		</dir>
+		<dir minversion="18.9.0">
+			<info compressed="false">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/matrix/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/matrix/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/matrix/zips/</datadir>
+		</dir>
+
+		<dir minversion="18.0" maxversion="18.9.0">
 			<info compressed="false">https://raw.githubusercontent.com/skyfsza/repository.auramod/master/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/skyfsza/repository.auramod/master/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/skyfsza/repository.auramod/master/</datadir>
@@ -312,16 +335,10 @@ v0.1.0.7
 			<artdir>https://github.com/a4k-openproject/a4kSubtitles/releases/download/v0.0.13</artdir>
 		</dir>
 
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/drinfernoo/plugin.program.autowidget/repo/zips/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/drinfernoo/plugin.program.autowidget/repo/zips/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/drinfernoo/plugin.program.autowidget/repo/zips/</datadir>
-		</dir>
-
-		<dir minversion="17.9.0">
-			<info compressed="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/leia/addons.xml</info>
-			<checksum>https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/leia/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/leia</datadir>
+		<dir minversion="18.0" maxversion="18.9.0">
+			<info compressed="true">https://raw.githubusercontent.com/mikesilvo164/repo.aeon.nox.silvo/master/leia/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/mikesilvo164/repo.aeon.nox.silvo/master/leia/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/mikesilvo164/repo.aeon.nox.silvo/master/leia/</datadir>
 		</dir>
 	</extension>
 
@@ -337,11 +354,12 @@ v0.1.0.7
 			<screenshot></screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.16 - March 07, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed gaff with "script.module.metahandler" still being in
-    Venom's repo.  This caused dependency issue under Leia.
-    Now the new metahandler repo will be used and proper
-    dependent version installed.[/I]
+[B][COLOR red]Update - v1.17 - March 11, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] AuraMod repo now set to only show in Kodi Leia.[/I]
+[COLOR yellow]--[/COLOR][I] Updated Jurial Munkey Alpha repo. v1.2 will now only
+    show in Kodi Leia and v2.0 will show in Kodi Matrix.[/I]
+[COLOR yellow]--[/COLOR][I] Silvo repo now set to only show in Kodi Leia.  Silvo skin
+    for Kodi Matrix is only available in official Kodi repo.[/I]
 		</news>
 	</extension>
 </addon>
