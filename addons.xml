@@ -46,7 +46,7 @@ v0.1.0.7
 	</extension>
 </addon>
 
-<addon id="context.venom" name="Venom - Global Context Menu Items" provider-name="Venom" version="1.1.2">
+<addon id="context.venom" name="Venom - Global Context Menu Items" provider-name="Venom" version="1.1.3">
 	<requires>
 		<import addon="script.module.requests" version="2.19.1" />
 	</requires>
@@ -175,13 +175,14 @@ v0.1.0.7
 			<screenshot></screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.1.2 - March 10, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Change method of determining bookmarks to use "ListItem.IsResumable".[/I]
+[B][COLOR red]Update - v1.1.3 - April 18, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Update for compatibility with plugin.video.venom TVShow meta provider
+    change from TVDb to TMDb.[/I]
 		</news>
 	</extension>
 </addon>
 
-<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.4.5">
+<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="5.0.0">
 	<requires>
 		<import addon="context.venom" />
 		<import addon="script.module.myaccounts" />
@@ -198,7 +199,7 @@ v0.1.0.7
 	<extension library="service.py" point="xbmc.service" start="startup" />
 	<extension library="resources/lib/" point="xbmc.python.module" />
 	<extension point="xbmc.addon.metadata">
-		<reuselanguageinvoker>false</reuselanguageinvoker>
+		<reuselanguageinvoker>true</reuselanguageinvoker>
 		<summary lang="en">[B][COLOR red]Venom[/COLOR][/B] - We do not host any of the contents streamed</summary>
 		<description lang="en">[B][COLOR red]Venom[/COLOR][/B][CR] This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR]The author does not host any of the content in this addon and takes no responsibility for content found</description>
 		<platform>all</platform>
@@ -215,18 +216,27 @@ v0.1.0.7
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v4.4.5 - March 11, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed ampersand sign in news to be encoded.  Sorry about that
-    folks, simply forgot.[/I]
-[B][COLOR red]Update - v4.4.4 - March 11, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Note TMDBHelper player files have been updated.  Be sure
-    to update via the TMDBHelper settings.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed TMDBHelper playback of library files(.strm) when
-    TMDBHelper is set to "Automatically play local files".[/I]
-[COLOR yellow]--[/COLOR][I] Few tweaks to some annoying folder and file names used for
-    library integration. Ex. "&amp;" was replaced with an underscore,
-    now replaced with the word "and".  Apostrophes in names
-    were being replaces with a "."(dot), now just removed.[/I]
+[B][COLOR red]Update - v5.0.0 - April 18, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] TVShow meta provider is now switched from TVDb to TMDb
+    throughout the addon.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed disable player artwork under autoplay configuration.[/I]
+[COLOR yellow]--[/COLOR][I] Added new window property to set the playback method chosen
+    in settings.  This now allows the Venom global context menu
+    addon to recognize the playback method on the fly without
+    the need to reload skin, or wait for a widget refresh.[/I]
+[COLOR yellow]--[/COLOR][I] New library setting allows .strm files to be created for TMDB Helper.[/I]
+[COLOR yellow]--[/COLOR][I] Alias title checking of source results has been improved for more
+    alias matches.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed a sorting issue when TVShows were set to "Default" resulting in
+    some item lists being empty.[/I]
+[COLOR yellow]--[/COLOR][I] Revised icon overlay values for Kodi doc changes.[/I]
+[COLOR yellow]--[/COLOR][I] Added new "Remove HDR sources" filter.[/I]
+[COLOR yellow]--[/COLOR][I] Added new "Remove Dolby Vision sources" filter.[/I]
+[COLOR yellow]--[/COLOR][I] Added some new source Indentifiers for "Additional Info" display.[/I]
+[COLOR yellow]--[/COLOR][I] Database handling and speed improvements.[/I]
+[COLOR yellow]--[/COLOR][I] Show packs will no longer scrape seasons that are still airing.[/I]
+[COLOR yellow]--[/COLOR][I] Added "date watched" to item label in Trakt History for movies
+    and episodes.[/I]
 		</news>
 	</extension>
 </addon>
@@ -248,7 +258,7 @@ v0.1.0.7
     </extension>
 </addon>
 
-<addon id="repository.venom" name="[COLOR red]Venom[/COLOR] Repository" version="1.17" provider-name="Venom">
+<addon id="repository.venom" name="[COLOR red]Venom[/COLOR] Repository" version="1.18" provider-name="Venom">
 	<extension point="xbmc.addon.repository" name="Venom Repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/123Venom/zips/master/addons.xml</info>
@@ -303,12 +313,6 @@ v0.1.0.7
 		</dir>
 
 		<dir minversion="18.0" maxversion="18.9.0">
-			<info compressed="false">https://raw.githubusercontent.com/skyfsza/repository.auramod/master/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/skyfsza/repository.auramod/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/skyfsza/repository.auramod/master/</datadir>
-		</dir>
-
-		<dir minversion="18.0" maxversion="18.9.0">
 			<info compressed="false">https://raw.githubusercontent.com/nixgates/nixgates/master/packages/leia/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/nixgates/nixgates/master/packages/leia/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/nixgates/nixgates/master/packages/leia/</datadir>
@@ -323,12 +327,6 @@ v0.1.0.7
 			<info compressed="false">https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/zip</datadir>
-		</dir>
-
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/</datadir>
 		</dir>
 
 		<dir>
@@ -357,12 +355,9 @@ v0.1.0.7
 			<screenshot></screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.17 - March 11, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] AuraMod repo now set to only show in Kodi Leia.[/I]
-[COLOR yellow]--[/COLOR][I] Updated Jurial Munkey Alpha repo. v1.2 will now only
-    show in Kodi Leia and v2.0 will show in Kodi Matrix.[/I]
-[COLOR yellow]--[/COLOR][I] Silvo repo now set to only show in Kodi Leia.  Silvo skin
-    for Kodi Matrix is only available in official Kodi repo.[/I]
+[B][COLOR red]Update - v1.18 - March 29, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Removed Marcel's beta repo and AuraMod repo due
+    to recent changes to Marcel's beta repo.[/I]
 		</news>
 	</extension>
 </addon>

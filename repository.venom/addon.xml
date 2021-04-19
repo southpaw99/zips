@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.venom" name="[COLOR red]Venom[/COLOR] Repository" version="1.17" provider-name="Venom">
+<addon id="repository.venom" name="[COLOR red]Venom[/COLOR] Repository" version="1.18" provider-name="Venom">
 	<extension point="xbmc.addon.repository" name="Venom Repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/123Venom/zips/master/addons.xml</info>
@@ -54,12 +54,6 @@
 		</dir>
 
 		<dir minversion="18.0" maxversion="18.9.0">
-			<info compressed="false">https://raw.githubusercontent.com/skyfsza/repository.auramod/master/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/skyfsza/repository.auramod/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/skyfsza/repository.auramod/master/</datadir>
-		</dir>
-
-		<dir minversion="18.0" maxversion="18.9.0">
 			<info compressed="false">https://raw.githubusercontent.com/nixgates/nixgates/master/packages/leia/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/nixgates/nixgates/master/packages/leia/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/nixgates/nixgates/master/packages/leia/</datadir>
@@ -74,12 +68,6 @@
 			<info compressed="false">https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/zip</datadir>
-		</dir>
-
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/</datadir>
 		</dir>
 
 		<dir>
@@ -108,12 +96,8 @@
 			<screenshot></screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.17 - March 11, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] AuraMod repo now set to only show in Kodi Leia.[/I]
-[COLOR yellow]--[/COLOR][I] Updated Jurial Munkey Alpha repo. v1.2 will now only
-    show in Kodi Leia and v2.0 will show in Kodi Matrix.[/I]
-[COLOR yellow]--[/COLOR][I] Silvo repo now set to only show in Kodi Leia.  Silvo skin
-    for Kodi Matrix is only available in official Kodi repo.[/I]
+[B][COLOR red]Update - v1.18 - March 26, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Removed Marcel's beta repo.[/I]
 		</news>
 	</extension>
 </addon>
