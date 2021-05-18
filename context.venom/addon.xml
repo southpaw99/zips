@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="context.venom" name="Venom - Global Context Menu Items" provider-name="Venom" version="1.1.3">
+<addon id="context.venom" name="Venom - Global Context Menu Items" provider-name="Venom" version="1.1.4">
 	<requires>
 		<import addon="script.module.requests" version="2.19.1" />
 	</requires>
@@ -128,9 +128,9 @@
 			<screenshot></screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.1.3 - April 18, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Update for compatibility with plugin.video.venom TVShow meta provider
-    change from TVDb to TMDb.[/I]
+[B][COLOR red]Update - v1.1.4 - May 18, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Fixed Rescrape from widget loading old cached values upon
+    re-entry of source select dialog.[/I]
 		</news>
 	</extension>
 </addon>
