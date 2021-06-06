@@ -46,7 +46,7 @@ v0.1.0.7
 	</extension>
 </addon>
 
-<addon id="context.venom" name="Venom - Global Context Menu Items" provider-name="Venom" version="1.1.6">
+<addon id="context.venom" name="Venom - Global Context Menu Items" provider-name="Venom" version="1.1.7">
 	<requires>
 		<import addon="script.module.requests" version="2.19.1" />
 	</requires>
@@ -173,10 +173,9 @@ v0.1.0.7
 			<screenshot></screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.1.6 - May 26, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Update "Browse Series" to reflect "tvshow.clearart" and "tvshow.clearlogo"
-    changes in Venom  This is only seen when Venom is set to "Direct Progress Scraping"
-    and "Browse Serires" is chosen.[/I]
+[B][COLOR red]Update - v1.1.7 - June 06, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Added "Clear Providers" to now be visible from within the Kodi Library for
+    for items that have been added from Venom addon.[/I]
 		</news>
 	</extension>
 </addon>
