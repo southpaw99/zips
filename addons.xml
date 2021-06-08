@@ -46,7 +46,7 @@ v0.1.0.7
 	</extension>
 </addon>
 
-<addon id="context.venom" name="Venom - Global Context Menu Items" provider-name="Venom" version="1.1.7">
+<addon id="context.venom" name="Venom - Global Context Menu Items" provider-name="Venom" version="1.1.8">
 	<requires>
 		<import addon="script.module.requests" version="2.19.1" />
 	</requires>
@@ -97,6 +97,13 @@ v0.1.0.7
 					String.StartsWith(ListItem.FolderPath,plugin://plugin.video.venom/?action=play) +
 					String.IsEqual(ListItem.Property(isVenom_widget),true) +
 					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]]
+				</visible>
+			</item>
+			<item library="libRescrape.py">
+				<label>[B][COLOR red]Venom[/COLOR][/B] - Rescrape Lib Item</label>
+				<visible>
+					String.Contains(Container.FolderPath,videodb://) + String.Contains(Container.ListItem.Path,plugin.video.venom) +
+					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]
 				</visible>
 			</item>
 			<item library="playFromHere.py">
@@ -173,8 +180,8 @@ v0.1.0.7
 			<screenshot></screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.1.7 - June 03, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] "Clear Providers" is now availble for Library Items via context menu for
+[B][COLOR red]Update - v1.1.8 - June 08, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] "Rescrape Lib Item" is now availble for Library Items via context menu for
     items added from the Venom addon.[/I]
 		</news>
 	</extension>
