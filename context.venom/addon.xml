@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="context.venom" name="Venom - Global Context Menu Items" provider-name="Venom" version="1.1.8">
+<addon id="context.venom" name="Venom - Global Context Menu Items" provider-name="Venom" version="1.1.9">
 	<requires>
 		<import addon="script.module.requests" version="2.19.1" />
 	</requires>
@@ -29,7 +29,8 @@
 					String.StartsWith(ListItem.FolderPath,plugin://plugin.video.venom/?action=play) +
 					String.IsEqual(ListItem.Property(isVenom_widget),true) +
 					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]] |
-					[String.Contains(Container.FolderPath,videodb://) + String.Contains(Container.ListItem.Path,plugin.video.venom) +
+					[String.Contains(Container.FolderPath,videodb://) +
+					[String.Contains(Container.ListItem.Path,Window(home).Property(venom.movieLib.path)) | String.Contains(Container.ListItem.Path,Window(home).Property(venom.tvLib.path))] +
 					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]]
 				</visible>
 			</item>
@@ -55,7 +56,8 @@
 			<item library="libRescrape.py">
 				<label>[B][COLOR red]Venom[/COLOR][/B] - Rescrape Lib Item</label>
 				<visible>
-					String.Contains(Container.FolderPath,videodb://) + String.Contains(Container.ListItem.Path,plugin.video.venom) +
+					String.Contains(Container.FolderPath,videodb://) +
+					[String.Contains(Container.ListItem.Path,Window(home).Property(venom.movieLib.path)) | String.Contains(Container.ListItem.Path,Window(home).Property(venom.tvLib.path))] +
 					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]
 				</visible>
 			</item>
@@ -71,7 +73,7 @@
 			<item library="autoPlay.py">
 				<label>[B][COLOR red]Venom[/COLOR][/B] - Auto Play</label>
 				<visible>
-					String.IsEmpty(Window(home).Property(plugin.video.venom.autoPlay)) +
+					String.IsEmpty(Window(home).Property(venom.autoPlay.enabled)) +
 					!String.IsEmpty(Window(home).Property(context.venom.autoPlay)) +
 					String.StartsWith(ListItem.FolderPath,plugin://plugin.video.venom/?action=play) +
 					String.IsEqual(ListItem.Property(isVenom_widget),true) +
@@ -81,7 +83,7 @@
 			<item library="sourceSelect.py">
 				<label>[B][COLOR red]Venom[/COLOR][/B] - Source Select</label>
 				<visible>
-					!String.IsEmpty(Window(home).Property(plugin.video.venom.autoPlay)) +
+					!String.IsEmpty(Window(home).Property(venom.autoPlay.enabled)) +
 					!String.IsEmpty(Window(home).Property(context.venom.sourceSelect)) +
 					String.StartsWith(ListItem.FolderPath,plugin://plugin.video.venom/?action=play) +
 					String.IsEqual(ListItem.Property(isVenom_widget),true) +
@@ -133,9 +135,8 @@
 			<screenshot></screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.1.8 - June 08, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] "Rescrape Lib Item" is now availble for Library Items via context menu for
-    items added from the Venom addon.[/I]
+[B][COLOR red]Update - v1.1.9 - June 12, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] "Trakt Manager" updated for changed to Venom addon.[/I]
 		</news>
 	</extension>
 </addon>
